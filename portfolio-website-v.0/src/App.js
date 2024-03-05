@@ -1,10 +1,17 @@
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./pages/Home";
+import Error404 from "./pages/Error404";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+export default function App() {
+    return (
+        <div className="App">
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="*"element={<Error404/>} />
+            </Routes>
+        </BrowserRouter>
+        </div>
+    );
 }
-
-export default App;
