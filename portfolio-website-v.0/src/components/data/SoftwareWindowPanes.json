@@ -1,0 +1,132 @@
+{
+    "panes": [
+        {
+            "index": 0,
+            "iconURL": "Bootstrap.png",
+            "backgroundColor": "#DC6CF8",
+            "name": "Bootstrap",
+            "description": "Bootstrap is a popular front-end framework for developing responsive and mobile-first websites. It provides pre-built CSS and JavaScript components for layout, forms, navigation, and more.",
+            "show": true
+        },
+        {
+            "index": 1,
+            "iconURL": "C.png",
+            "backgroundColor": "#305DD0",
+            "name": "C",
+            "description": "C is a general-purpose, procedural programming language. It is widely used for system and application software development, including operating systems and embedded systems programming.",
+            "show": true
+        },
+        {
+            "index": 2,
+            "iconURL": "Cpp.png",
+            "backgroundColor": "#305DD0",
+            "name": "C++",
+            "description": "C++ is a general-purpose programming language and an extension of the C language. It supports object-oriented programming, generic programming, and procedural programming.",
+            "show": true
+        },
+        {
+            "index": 3,
+            "iconURL": "CSS.png",
+            "backgroundColor": "#2DB3EC",
+            "name": "CSS",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, colors, fonts, and other visual aspects of web pages.",
+            "show": true
+        },
+        {
+            "index": 4,
+            "iconURL": "Django.png",
+            "backgroundColor": "#CAE755",
+            "name": "Django",
+            "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the model-view-template (MVT) architectural pattern and emphasizes reusability and pluggability of components.",
+            "show": true
+        },
+        {
+            "index": 5,
+            "iconURL": "Eagle.png",
+            "backgroundColor": "#FFB72C",
+            "name": "Eagle",
+            "description": "Eagle is a PCB (Printed Circuit Board) design software. It allows electronic engineers to design schematics and layout PCBs for various electronic projects.",
+            "show": true
+        },
+        {
+            "index": 6,
+            "iconURL": "Fusion360.png",
+            "backgroundColor": "#f6821f",
+            "name": "Fusion 360",
+            "description": "Fusion 360 is a cloud-based 3D CAD, CAM, and CAE software platform for product design and manufacturing. It combines industrial design, mechanical engineering, and collaboration tools in a single package.",
+            "show": true
+        },
+        {
+            "index": 7,
+            "iconURL": "HTML.png",
+            "backgroundColor": "#f6821f",
+            "name": "HTML",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications. It defines the structure and content of web documents.",
+            "show": true
+        },
+        {
+            "index": 8,
+            "iconURL": "Java.png",
+            "backgroundColor": "#00CED1",
+            "name": "Java",
+            "description": "Java is a general-purpose, object-oriented programming language. It is designed to have as few implementation dependencies as possible, making it suitable for cross-platform development.",
+            "show": true
+        },
+        {
+            "index": 9,
+            "iconURL": "Javascript.png",
+            "backgroundColor": "#FFD700",
+            "name": "JavaScript",
+            "description": "JavaScript is a programming language used to create interactive effects within web browsers. It is commonly used for front-end web development, but it can also be used for server-side programming with Node.js.",
+            "show": true
+        },
+        {
+            "index": 10,
+            "iconURL": "Microcap.png",
+            "backgroundColor": "#FFD700",
+            "name": "Microcap",
+            "description": "Microcap is a software tool used for analog and mixed-signal electronic circuit simulation. It enables engineers to design and analyze electronic circuits before fabrication.",
+            "show": true
+        },
+        {
+            "index": 11,
+            "iconURL": "Python.png",
+            "backgroundColor": "#CAE755",
+            "name": "Python",
+            "description": "Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used for web development, data analysis, artificial intelligence, and scientific computing.",
+            "show": true
+        },
+        {
+            "index": 12,
+            "iconURL": "REACT.png",
+            "backgroundColor": "#2DB3EC",
+            "name": "React",
+            "description": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and build single-page applications with a declarative approach to building user interfaces.",
+            "show": true
+        },
+        {
+            "index": 13,
+            "iconURL": "Solidedge.png",
+            "backgroundColor": "#2DB3EC",
+            "name": "Solid Edge",
+            "description": "Solid Edge is a 3D CAD software tool for mechanical design, simulation, manufacturing, and collaboration. It provides tools for modeling, drafting, sheet metal design, and assembly management.",
+            "show": true
+        },
+        {
+            "index": 14,
+            "iconURL": "Tailwind.png",
+            "backgroundColor": "#305DD0",
+            "name": "Tailwind CSS",
+            "description": "Tailwind CSS is a utility-first CSS framework for building custom user interfaces. It provides low-level utility classes that can be composed to create responsive and accessible designs.",
+            "show": true
+        },
+        {
+            "index": 15,
+            "iconURL": "VHDL.png",
+            "backgroundColor": "#00CED1",
+            "name": "VHDL",
+            "description": "VHDL (VHSIC Hardware Description Language) is a hardware description language used to model and simulate digital circuits. It is commonly used in the design and verification of electronic systems.",
+            "show": true
+        }
+    ]
+}
