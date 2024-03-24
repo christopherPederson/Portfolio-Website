@@ -1,5 +1,5 @@
 import SoftwareWindow from "./SoftwareWindow";
 
 export default function Banner() {
-    return (<SoftwareWindow/>);
+    return <SoftwareWindow />;
 }

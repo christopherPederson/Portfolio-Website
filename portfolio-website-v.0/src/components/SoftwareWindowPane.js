@@ -14,9 +14,12 @@ export default function SoftwareWindowPane(props) {
     return (
         <div
             className="paneWrapper border-4 border-black flex justify-center items-center w-auto aspect-square p-2"
-            style={{ backgroundColor: props.backgroundColor}} 
+            style={{ backgroundColor: props.backgroundColor }}
         >
-            <img className="object-scale-down h-auto aspect-square" src={javascriptIcon} alt={props.name} />
+            <img
+                className="object-scale-down h-auto aspect-square"
+                src={javascriptIcon}
+            />
         </div>
     );
 }

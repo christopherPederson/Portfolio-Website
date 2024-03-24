@@ -3,14 +3,20 @@ import SoftwareWindowPane from "./SoftwareWindowPane.js";
 import paneData from "./data/SoftwareWindowPanes.json";
 
 export default function SoftwareWindow() {
-    
+    //declaration of state variables using useState
     const [panes, setPanes] = useState([]);
 
-    useEffect(() => {
-        setPanes(paneData.panes);
-    }, []);
+    //function to shuffle the array of panes
+    const shuffleArray = (array) => {
+        let newArray = [...array];
+        for (let i = newArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+        }
+        return newArray;
+    };
 
-    let generatePanes = () => {
+    const generatePanes = () => {
         return panes.map((pane, index) => {
             if (pane.show === true) {
                 return (
@@ -21,11 +27,20 @@ export default function SoftwareWindow() {
                         description={pane.description}
                     />
                 );
-            }else{
+            } else {
                 return null;
             }
         });
     };
+
+    useEffect(() => {
+        setPanes(paneData.panes);
+        const intervalId = setInterval(() => {
+            setPanes((prevPanes) => shuffleArray(prevPanes));
+        }, 3000);
+
+        return () => clearInterval(intervalId); // Clear interval on component unmount or re-render
+    }, []); // Run effect only once on component mount
 
     return (
         <div
