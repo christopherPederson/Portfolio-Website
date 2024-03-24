@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export default function SoftwareWindowPane(props) {
     const [javascriptIcon, setJavascriptIcon] = useState(null);
 
-    import(`./data/Icons/${props.iconURL}`)
+    import(`../data/SoftwareIcons/${props.iconURL}`)
         .then((icon) => {
             setJavascriptIcon(icon.default);
         })

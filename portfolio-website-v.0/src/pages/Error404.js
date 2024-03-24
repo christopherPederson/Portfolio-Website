@@ -1,4 +1,4 @@
-import BtnPrimary from "../components/btn--primary";
+import BtnPrimary from "../components/GlobalComponents/btn--primary";
 
 export default function Error404() {
     return (
