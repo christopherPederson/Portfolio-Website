@@ -1,0 +1,31 @@
+{
+    "icons": [
+        {
+            "name": "Email",
+            "iconURL": "EmailIcon.png",
+            "link":"christopherjamespederson@gmail.com",
+            "mailTo": true,
+            "show": true
+        },
+        {
+            "name": "GitHub",
+            "iconURL": "GitHubIcon.png",
+            "link":"https://github.com/christopherPederson",
+            "mailTo": false,
+            "show": true
+        },
+        {
+            "name": "Instagram",
+            "iconURL": "InstagramIcon.png",
+            "link":"https://www.instagram.com/chris_pederson_",
+            "mailTo": false,
+            "show": true
+        },{
+            "name": "CV",
+            "iconURL": "CVIcon.png",
+            "link":"https://github.com/christopherPederson",
+            "mailTo": false,
+            "show": true
+        }
+    ]
+}
