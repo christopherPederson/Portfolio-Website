@@ -8,17 +8,17 @@
     aspect-ratio: 1/1;
 }
 
-@media (max-aspect-ratio: 17/10) {
+@media (max-aspect-ratio: 155/100) {
     #banner {
         flex-direction: column;
         text-align: center;
     }
-    #IntroText > div,
-    #IntroText > h1 {
+    #introText > div,
+    #introText > h1 {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    #IconsBox{
+    #introText_iconsBox{
         justify-content: center;
     }
     #softwareWindow {

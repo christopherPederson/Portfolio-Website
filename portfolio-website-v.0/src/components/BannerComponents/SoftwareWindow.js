@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SoftwareWindowPane from "./SoftwareWindowPane.js";
 import paneData from "../data/SoftwareWindowPanes.json";
-import "../ComponentStyles/SoftwareWindow.css";
 
 export default function SoftwareWindow() {
     //declaration of state variables using useState

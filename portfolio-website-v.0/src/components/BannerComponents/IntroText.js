@@ -3,7 +3,7 @@ import LinkedIconData from "../data/LinkedIcons.json";
 
 export default function IntroText() {
     return (
-        <div id="IntroText" className="flex flex-col justify-evenly p-2 min-h-96">
+        <div id="introText" className="flex flex-col justify-evenly p-2 min-h-screen">
             <h1 className="text-5xl">
                 Hi, im Chris. Welcome to my custom coded portfolio website...
             </h1>
@@ -13,15 +13,15 @@ export default function IntroText() {
                     programming skills but also my plethora of hardware and
                     software engineering projects
                 </p>
-                <div id="IconsBox" className="flex">
-                    {LinkedIconData.icons.map((NewIcon, index) => {
+                <div id="introText_iconsBox" className="flex">
+                    {LinkedIconData.icons.map((icon, index) => {
                         return (
                             <LinkedIcon
-                                iconURL={NewIcon.iconURL}
-                                name={NewIcon.name}
-                                link={NewIcon.link}
-                                show={NewIcon.show}
-                                mailTo={NewIcon.mailTo}
+                                iconURL={icon.iconURL}
+                                name={icon.name}
+                                link={icon.link}
+                                show={icon.show}
+                                mailTo={icon.mailTo}
                             />
                         );
                     })}

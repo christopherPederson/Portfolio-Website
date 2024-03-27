@@ -1,4 +1,4 @@
-import "../ComponentStyles/LinkedIcon.css";
+import "./LinkedIcon.css";
 import { useState } from "react";
 
 export default function LinkedIcon(props) {
@@ -14,7 +14,7 @@ export default function LinkedIcon(props) {
             });
         if (props.mailTo) {
             return (
-                <div className="IconWrapper">
+                <div className="iconWrapper">
                     <a href={`mailto:${props.link}`}>
                         <img className="h-10" src={icon} />
                     </a>
@@ -22,7 +22,7 @@ export default function LinkedIcon(props) {
             );
         } else {
             return (
-                <div className="IconWrapper">
+                <div className="iconWrapper">
                     <a href={props.link}>
                         <img className="h-10" src={icon} />
                     </a>
