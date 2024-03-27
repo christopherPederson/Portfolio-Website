@@ -20,6 +20,8 @@ export default function IntroText() {
                                 iconURL={NewIcon.iconURL}
                                 name={NewIcon.name}
                                 link={NewIcon.link}
+                                show={NewIcon.show}
+                                mailTo={NewIcon.mailTo}
                             />
                         );
                     })}
