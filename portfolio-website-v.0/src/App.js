@@ -5,7 +5,7 @@ import Error404 from "./pages/Error404";
 
 export default function App() {
     return (
-        <div className="App bg-black h-screen flex flex-col items-center">
+        <div className="App bg-black flex flex-col items-center">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />

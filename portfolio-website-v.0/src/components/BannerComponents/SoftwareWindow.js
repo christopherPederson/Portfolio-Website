@@ -1,30 +1,11 @@
 import React, { useState, useEffect } from "react";
 import SoftwareWindowPane from "./SoftwareWindowPane.js";
 import paneData from "../data/SoftwareWindowPanes.json";
+import "../ComponentStyles/SoftwareWindow.css";
 
 export default function SoftwareWindow() {
     //declaration of state variables using useState
     const [panes, setPanes] = useState([]);
-
-    //function decleration and initial call to update the screen size
-    let updateScreenSize = () => {
-
-        const softwareWindow = document.getElementById("softwareWindow");
-
-        if (softwareWindow) {
-            let screenHeight = window.screen.height;
-            let screenWidth = window.screen.width;
-            if (screenHeight > screenWidth) {
-                softwareWindow.classList.remove("h-screen");
-                softwareWindow.classList.add("w-screen");
-            } else {
-                softwareWindow.classList.remove("w-screen");
-                softwareWindow.classList.add("h-screen");
-            }
-        }
-    };
-
-    updateScreenSize();
 
     //function to shuffle the array of panes
     const shuffleArray = (array) => {
@@ -60,12 +41,10 @@ export default function SoftwareWindow() {
 
         const intervalId = setInterval(() => {
             setPanes((prevPanes) => shuffleArray(prevPanes));
-        }, 1000);
+        }, 2000);
 
         return () => clearInterval(intervalId); // Clear interval on component unmount or re-render
     }, []); // Run effect only once on component mount
-
-    window.addEventListener("resize", updateScreenSize);
 
     return (
         <div

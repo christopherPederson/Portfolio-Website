@@ -17,7 +17,7 @@ export default function LinkedIcon(props) {
     return (
         <div className="IconWrapper" data-tooltip={props.name}>
             <a href={props.link}>
-                <img src={icon} />
+                <img className="h-10"src={icon} />
             </a>
         </div>
     );

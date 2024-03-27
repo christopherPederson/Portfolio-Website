@@ -1,0 +1,28 @@
+#banner {
+    display: flex;
+    flex-direction: row;
+}
+#softwareWindow {
+    height: 100vh;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+@media (max-aspect-ratio: 17/10) {
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    #IntroText > div,
+    #IntroText > h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #IconsBox{
+        justify-content: center;
+    }
+    #softwareWindow {
+        height: auto;
+        width: 100vw;
+    }
+}
