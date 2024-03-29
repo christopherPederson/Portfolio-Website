@@ -1,0 +1,40 @@
+{
+    "slices": [
+        {
+            "projects": [
+                {
+                    "name": "PG PCB",
+                    "title": "Automotive Grade Controller PCB",
+                    "mainImage": "PGPCB.png",
+                    "color": "#FFD700",
+                    "orientation":"image--left"
+                },
+                {
+                    "name": "RTL CIRCUITS",
+                    "title": "RTL Logic Circuits",
+                    "mainImage": "RTLCIRCUITS.png",
+                    "color": "#2DB3EC",
+                    "orientation":"image--right"
+                }
+            ]
+        },
+        {
+            "projects": [
+                {
+                    "name": "PG PCB",
+                    "title": "Automotive Grade Controller PCB",
+                    "mainImage": "PGPCB.png",
+                    "color": "#FFD700",
+                    "orientation":"image--left"
+                },
+                {
+                    "name": "RTL CIRCUITS",
+                    "title": "RTL Logic Circuits",
+                    "mainImage": "RTLCIRCUITS.png",
+                    "color": "#2DB3EC",
+                    "orientation":"image--right"
+                }
+            ]
+        }
+    ]
+}

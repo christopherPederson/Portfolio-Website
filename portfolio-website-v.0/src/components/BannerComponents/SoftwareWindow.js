@@ -48,7 +48,7 @@ export default function SoftwareWindow() {
     return (
         <div
             id="softwareWindow"
-            className="grid grid-cols-4 p-2 h-screen"
+            className="grid p-2"
             style={{ aspectRatio: "1 / 1" }}
         >
             {generatePanes()}

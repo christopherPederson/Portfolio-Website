@@ -5,6 +5,7 @@
 #softwareWindow {
     height: 100vh;
     width: auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     aspect-ratio: 1/1;
 }
 
@@ -22,7 +23,6 @@
         justify-content: center;
     }
     #softwareWindow {
-        height: auto;
-        width: 100vw;
+        display: none;
     }
 }

@@ -5,7 +5,7 @@ export default function LinkedIcon(props) {
     let [icon, setIcon] = useState(null);
 
     if (props.show) {
-        import(`../data/GlobalImages/${props.iconURL}`)
+        import(process.env.PUBLIC_URL + "/public/assets/GlobalImages/" + props.iconURL)
             .then((newIcon) => {
                 setIcon(newIcon.default);
             })
