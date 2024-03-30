@@ -1,21 +1,47 @@
-#slice {
+.slice {
     height: 50vh;
     width: 100vw;
     display: flex;
 }
-#projectWrapper {
+.projectWrapper {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: black;
     padding: 2rem;
+    overflow: hidden;
 }
-#projectWrapper img {
+.projectWrapper img {
     width: 50%;
 }
-#projectWrapper h1 {
-    font-size: 2em;
+.projectWrapper h1 {
+    font-size: 2rem;
     font-weight: 700;
     width: 40%;
+}
+
+@media (max-aspect-ratio: 155/100) {
+    .slice{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .projectWrapper{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectWrapper{
+        flex-direction: column;
+
+        align-items: center;
+    }
+    .projectWrapper h1{
+        text-align: center;
+        width: 80%;
+    }
+    .projectWrapper img{
+        width: 80%;
+    }
 }

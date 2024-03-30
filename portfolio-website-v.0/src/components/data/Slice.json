@@ -3,16 +3,16 @@
         {
             "projects": [
                 {
-                    "name": "PG PCB",
-                    "title": "Automotive Grade Controller PCB",
-                    "mainImage": "PGPCB.png",
+                    "name": "PG_PCB",
+                    "title": "Automotive Controller PCBA",
+                    "mainImage": "PG_PCB_MAIN.png",
                     "color": "#FFD700",
                     "orientation":"image--left"
                 },
                 {
-                    "name": "RTL CIRCUITS",
+                    "name": "RTL",
                     "title": "RTL Logic Circuits",
-                    "mainImage": "RTLCIRCUITS.png",
+                    "mainImage": "RTL_MAIN.png",
                     "color": "#2DB3EC",
                     "orientation":"image--right"
                 }
@@ -21,18 +21,18 @@
         {
             "projects": [
                 {
-                    "name": "PG PCB",
-                    "title": "Automotive Grade Controller PCB",
-                    "mainImage": "PGPCB.png",
-                    "color": "#FFD700",
-                    "orientation":"image--left"
+                    "name": "PG_WEBSITE",
+                    "title": "Corporate Website Dev",
+                    "mainImage": "PG_WEBSITE_MAIN.png",
+                    "color": "#FF6E6E",
+                    "orientation":"image--right"
                 },
                 {
-                    "name": "RTL CIRCUITS",
-                    "title": "RTL Logic Circuits",
-                    "mainImage": "RTLCIRCUITS.png",
-                    "color": "#2DB3EC",
-                    "orientation":"image--right"
+                    "name": "ADDER",
+                    "title": "analog adder circuit",
+                    "mainImage": "ADDER_MAIN.png",
+                    "color": "#DC6CF8",
+                    "orientation":"image--left"
                 }
             ]
         }

@@ -7,10 +7,9 @@ export default function Slice(props) {
 
     const generateProjects = () => {
         return data.map((element, index) => {
-            console.log(data[index]);
             return <Project key={index} projectData={data[index]} />;
         });
     };
 
-    return <div id="slice">{generateProjects()}</div>;
+    return <div className="slice">{generateProjects()}</div>;
 }

@@ -3,7 +3,7 @@ import LinkedIconData from "../data/LinkedIcons.json";
 
 export default function IntroText() {
     return (
-        <div id="introText" className="flex flex-col justify-evenly p-2 min-h-screen">
+        <div id="introText" className="flex flex-col justify-evenly p-2 pl-8 min-h-screen">
             <h1 className="text-5xl">
                 Hi, im Chris. Welcome to my custom coded portfolio website...
             </h1>
