@@ -1,6 +1,7 @@
 #banner {
     display: flex;
     flex-direction: row;
+    padding-left: 8px;
 }
 #softwareWindow {
     height: 100vh;
@@ -13,13 +14,14 @@
     #banner {
         flex-direction: column;
         text-align: center;
+        padding-left: 0px;
     }
     #introText > div,
     #introText > h1 {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    #introText_iconsBox{
+    #introText_iconsBox {
         justify-content: center;
     }
     #softwareWindow {

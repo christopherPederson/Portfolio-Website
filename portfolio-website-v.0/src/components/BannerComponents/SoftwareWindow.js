@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SoftwareWindowPane from "./SoftwareWindowPane.js";
 import paneData from "../data/SoftwareWindowPanes.json";
+import { v4 as uuidv4 } from "uuid";
 
 export default function SoftwareWindow() {
     //declaration of state variables using useState
@@ -22,6 +23,7 @@ export default function SoftwareWindow() {
             if (pane.show === true) {
                 return (
                     <SoftwareWindowPane
+                        key={uuidv4()}
                         iconURL={pane.iconURL}
                         backgroundColor={pane.backgroundColor}
                         name={pane.name}
