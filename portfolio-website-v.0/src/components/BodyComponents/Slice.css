@@ -4,22 +4,29 @@
     display: flex;
 }
 .projectWrapper {
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: black;
     padding: 2rem;
     overflow: hidden;
+    transition: flex-grow 0.5s ease-in-out;
 }
 .projectWrapper img {
+    flex-grow: 1;
     width: 50%;
 }
 .projectWrapper h1 {
+    flex-grow: 1;
     font-size: 2rem;
     font-weight: 700;
     width: 40%;
 }
+
+
+
+
 
 @media (max-aspect-ratio: 155/100) {
     .slice{
