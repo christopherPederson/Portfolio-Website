@@ -27,7 +27,7 @@ export default function Project(props) {
         return (
             <div
                 id={props.uid}
-                className="projectWrapper"
+                className={"projectWrapper " + props.classListString}
                 style={{ backgroundColor: data.color }}
                 onMouseEnter={props.onMouseEnter}
                 onMouseLeave={props.onMouseLeave}

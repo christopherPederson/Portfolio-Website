@@ -7,6 +7,7 @@ export default function Slice(props) {
     const data = props.sliceData.projects;
     const [projectElements, setProjectElements] = useState([]);
     const projectUIDs = [uuidv4(), uuidv4()];
+    const classListStrings = [useState(""), useState("")];
 
     useEffect(() => {
         const elements = [
@@ -30,13 +31,13 @@ export default function Slice(props) {
     }, []);
 
     const handleMouseOver = (index) => {
-        projectElements[index].classList.add("maximize");
-        projectElements[index ^ 1].classList.add("minimize");
+        classListStrings[index][1]("maximized");
+        classListStrings[index ^ 1][1]("minimized");
     };
 
     const handleMouseOut = (index) => {
-        projectElements[index].classList.remove("maximize");
-        projectElements[index ^ 1].classList.remove("minimize");
+        classListStrings[index][1]("");
+        classListStrings[index ^ 1][1]("");
     };
 
     const generateProjects = () => {
@@ -45,6 +46,7 @@ export default function Slice(props) {
                 key={uuidv4()}
                 uid={projectUIDs[index]}
                 projectData={project}
+                classListString={classListStrings[index][0]}
                 onMouseEnter={() => handleMouseOver(index)}
                 onMouseLeave={() => handleMouseOut(index)}
             />
