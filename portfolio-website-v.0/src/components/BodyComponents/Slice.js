@@ -12,7 +12,7 @@ export default function Slice(props) {
     useEffect(() => {
         const elements = [
             document.getElementById(projectUIDs[0]),
-            document.getElementById(projectUIDs[1]),
+            document.getElementById(projectUIDs[1])
         ];
         setProjectElements(elements);
 

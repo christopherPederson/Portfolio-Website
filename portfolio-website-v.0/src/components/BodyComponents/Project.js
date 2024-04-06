@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { CSSTransition } from "react-transition-group";
 
 export default function Project(props) {
     // declare state variables
@@ -38,5 +39,9 @@ export default function Project(props) {
         );
     };
 
-    return generateContent();
+    return (
+        <CSSTransition in={true} timeout={500} classNames={"projectHoverAnimation"}>
+            {generateContent()}
+        </CSSTransition>
+    );
 }

@@ -8,13 +8,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* color: black; */
+    color: black;
     padding: 2rem;
     overflow: hidden;
-    transition: flex-grow 0.5s ease-in-out;
     width: 100%; /* Ensure each projectWrapper occupies the full width */
+    transition: width 0.5s ease-in-out;
 }
-
 .projectWrapper img {
     flex: 1; /* Use flex shorthand to distribute space equally */
     max-width: 50%; /* Set maximum width for the image */
@@ -27,16 +26,18 @@
     max-width: 40%; /* Set maximum width for the h1 element */
 }
 .minimized{
-    flex-grow: 1;
-    color:red;
+    width: 0px;
+    display: none;
 }
 .maximized{
-    flex-grow: 100;
-    color:blue;
+    width: 100%;
 }
-
-
-
+.minimized *{
+    display: none;
+}
+.maximized *{
+    display: none;
+}
 
 @media (max-aspect-ratio: 155/100) {
     .slice{
