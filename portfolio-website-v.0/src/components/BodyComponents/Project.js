@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
+import { v4 as uuidv4 } from "uuid";
+import "./Slice.css";
 
 export default function Project(props) {
     // declare state variables
@@ -24,24 +26,24 @@ export default function Project(props) {
             console.error("Error importing image: ", error);
         });
 
-    let generateContent = () => {
-        return (
+    return (
+        <CSSTransition
+            in={true}
+            timeout={500}
+            unmountOnExit
+            classNames={"maximized"}
+        >
             <div
                 id={props.uid}
-                className={"projectWrapper " + props.classListString}
+                className={"projectWrapper"}
                 style={{ backgroundColor: data.color }}
+                key={uuidv4()}
                 onMouseEnter={props.onMouseEnter}
                 onMouseLeave={props.onMouseLeave}
             >
                 {elementAry[contentOrientation]}
                 {elementAry[contentOrientation ^ 1]}
             </div>
-        );
-    };
-
-    return (
-        <CSSTransition in={true} timeout={500} classNames={"projectHoverAnimation"}>
-            {generateContent()}
         </CSSTransition>
     );
 }

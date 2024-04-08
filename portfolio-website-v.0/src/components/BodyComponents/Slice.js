@@ -7,37 +7,30 @@ export default function Slice(props) {
     const data = props.sliceData.projects;
     const [projectElements, setProjectElements] = useState([]);
     const projectUIDs = [uuidv4(), uuidv4()];
-    const classListStrings = [useState(""), useState("")];
+    const [animationClassStrings, setAnimationClassStrings] = useState(["", ""]);
 
     useEffect(() => {
         const elements = [
             document.getElementById(projectUIDs[0]),
-            document.getElementById(projectUIDs[1])
+            document.getElementById(projectUIDs[1]),
         ];
         setProjectElements(elements);
-
-        return () => {
-            elements.forEach((element, index) => {
-                if (element) {
-                    element.removeEventListener("mouseover", () =>
-                        handleMouseOver(index)
-                    );
-                    element.removeEventListener("mouseout", () =>
-                        handleMouseOut(index)
-                    );
-                }
-            });
-        };
     }, []);
 
     const handleMouseOver = (index) => {
-        classListStrings[index][1]("maximized");
-        classListStrings[index ^ 1][1]("minimized");
+        if (animationClassStrings[index] === "maximized" || animationClassStrings[index] === "minimized") return;
+        let tempAnimationClassStrings = [...animationClassStrings];
+        tempAnimationClassStrings[index] = "maximized";
+        tempAnimationClassStrings[index ^ 1] = "minimized";
+        setAnimationClassStrings(tempAnimationClassStrings);
     };
 
     const handleMouseOut = (index) => {
-        classListStrings[index][1]("");
-        classListStrings[index ^ 1][1]("");
+        if (animationClassStrings[index] === "" || animationClassStrings[index] === "") return;
+        let tempAnimationClassStrings = [...animationClassStrings];
+        tempAnimationClassStrings[index] = "";
+        tempAnimationClassStrings[index ^ 1] = "";
+        setAnimationClassStrings(tempAnimationClassStrings);
     };
 
     const generateProjects = () => {
@@ -46,7 +39,7 @@ export default function Slice(props) {
                 key={uuidv4()}
                 uid={projectUIDs[index]}
                 projectData={project}
-                classListString={classListStrings[index][0]}
+                animationClassString={animationClassStrings[index]}
                 onMouseEnter={() => handleMouseOver(index)}
                 onMouseLeave={() => handleMouseOut(index)}
             />

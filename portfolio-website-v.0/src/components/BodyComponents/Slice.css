@@ -11,8 +11,8 @@
     color: black;
     padding: 2rem;
     overflow: hidden;
-    width: 100%; /* Ensure each projectWrapper occupies the full width */
-    transition: width 0.5s ease-in-out;
+    width: 100%;
+    flex-grow: 1;
 }
 .projectWrapper img {
     flex: 1; /* Use flex shorthand to distribute space equally */
@@ -25,19 +25,35 @@
     font-weight: 700;
     max-width: 40%; /* Set maximum width for the h1 element */
 }
-.minimized{
-    width: 0px;
-    display: none;
+.minimized-enter{
+    opacity: 0;
 }
-.maximized{
-    width: 100%;
+.minimized-enter-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
 }
-.minimized *{
-    display: none;
+.minimized-exit{
+    opacity: 1;
 }
-.maximized *{
-    display: none;
+.minimized-exit-active{
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
 }
+.maximized-enter{
+    opacity: 1;
+}
+.maximized-enter-active{
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+.maximized-exit{
+    opacity: 0;
+}
+.maximized-exit-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
 
 @media (max-aspect-ratio: 155/100) {
     .slice{
