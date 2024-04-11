@@ -19,40 +19,13 @@
     max-width: 50%; /* Set maximum width for the image */
 }
 
-.projectWrapper h1 {
+.projectWrapper div {
     flex: 1; /* Use flex shorthand to distribute space equally */
     font-size: 2rem;
     font-weight: 700;
     max-width: 40%; /* Set maximum width for the h1 element */
 }
-.minimized-enter{
-    opacity: 0;
-}
-.minimized-enter-active{
-    opacity: 1;
-    transition: opacity 500ms ease-in-out;
-}
-.minimized-exit{
-    opacity: 1;
-}
-.minimized-exit-active{
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-}
-.maximized-enter{
-    opacity: 1;
-}
-.maximized-enter-active{
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-}
-.maximized-exit{
-    opacity: 0;
-}
-.maximized-exit-active{
-    opacity: 1;
-    transition: opacity 500ms ease-in-out;
-}
+
 
 
 @media (max-aspect-ratio: 155/100) {

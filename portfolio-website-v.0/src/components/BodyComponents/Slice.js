@@ -5,32 +5,20 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function Slice(props) {
     const data = props.sliceData.projects;
-    const [projectElements, setProjectElements] = useState([]);
     const projectUIDs = [uuidv4(), uuidv4()];
-    const [animationClassStrings, setAnimationClassStrings] = useState(["", ""]);
+    const [formatClassString,setFormatClassString] = useState(["",""])
 
-    useEffect(() => {
-        const elements = [
-            document.getElementById(projectUIDs[0]),
-            document.getElementById(projectUIDs[1]),
-        ];
-        setProjectElements(elements);
-    }, []);
+    // if (formatClassString[index] === "maximized" || formatClassString[index] === "minimized") return;
+    // let tempFormatClassString = [...formatClassString];
+    // tempFormatClassString[index] = "maximized";
+    // tempFormatClassString[index ^ 1] = "minimized";
+    // setFormatClassString(tempFormatClassString);
 
-    const handleMouseOver = (index) => {
-        if (animationClassStrings[index] === "maximized" || animationClassStrings[index] === "minimized") return;
-        let tempAnimationClassStrings = [...animationClassStrings];
-        tempAnimationClassStrings[index] = "maximized";
-        tempAnimationClassStrings[index ^ 1] = "minimized";
-        setAnimationClassStrings(tempAnimationClassStrings);
+    const handleClickOpen = () => {
+        
     };
-
-    const handleMouseOut = (index) => {
-        if (animationClassStrings[index] === "" || animationClassStrings[index] === "") return;
-        let tempAnimationClassStrings = [...animationClassStrings];
-        tempAnimationClassStrings[index] = "";
-        tempAnimationClassStrings[index ^ 1] = "";
-        setAnimationClassStrings(tempAnimationClassStrings);
+    const handleClickClose = () => {
+        
     };
 
     const generateProjects = () => {
@@ -39,9 +27,9 @@ export default function Slice(props) {
                 key={uuidv4()}
                 uid={projectUIDs[index]}
                 projectData={project}
-                animationClassString={animationClassStrings[index]}
-                onMouseEnter={() => handleMouseOver(index)}
-                onMouseLeave={() => handleMouseOut(index)}
+                formatClassString={formatClassString[index]}
+                handleClickOpen={() => {handleClickOpen(index)}}
+                handleClickClose={() => {handleClickClose(index)}}
             />
         ));
     };
