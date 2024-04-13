@@ -1,14 +1,19 @@
-import Slice from "./Slice";
-import data from "../data/Slice.json";
+import Display from "./Display";
+import data from "../data/DisplayData.json";
 import { v4 as uuidv4 } from "uuid";
+import "./body.css";
 
 export default function Body() {
 
-    const populateSlices = () => {
-        return data.slices.map((slice, index) => {
-            return <Slice key={uuidv4()} sliceData={slice} />;
+    const generateDisplays = () => {
+        return data.displays.map((instance) => {
+            return <Display key={uuidv4()} data={instance} />
         })
     }
 
-    return <>{populateSlices()}</>;
+    return(
+        <div className="body">
+            {generateDisplays()}
+        </div>
+    )
 }

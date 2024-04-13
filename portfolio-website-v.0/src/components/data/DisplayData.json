@@ -1,0 +1,120 @@
+{
+    "displays": [
+        {
+            "name": "PG_PCB",
+            "title": "Automotive Controller PCBA",
+            "mainImage": "PG_PCB_MAIN.jpeg",
+            "color": "#FFD700",
+            "orientation": "image--left",
+            "subDisplays": [
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                }
+            ]
+        },
+        {
+            "name": "RTL",
+            "title": "RTL Logic Circuits",
+            "mainImage": "RTL_MAIN.jpg",
+            "color": "#2DB3EC",
+            "orientation": "image--right",
+            "subDisplays": [
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                }
+            ]
+        },
+        {
+            "name": "PG_WEBSITE",
+            "title": "Corporate Website Dev",
+            "mainImage": "PG_WEBSITE_MAIN.png",
+            "color": "#FF6E6E",
+            "orientation": "image--right",
+            "subDisplays": [
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                }
+            ]
+        },
+        {
+            "name": "ADDER",
+            "title": "analog adder circuit",
+            "mainImage": "ADDER_MAIN.jpg",
+            "color": "#DC6CF8",
+            "orientation": "image--left",
+            "subDisplays": [
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                },
+                {
+                    "image": "PG_PCB_SUB1.png",
+                    "title": "PCB Layout",
+                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                }
+            ]
+        }
+    ]
+}
