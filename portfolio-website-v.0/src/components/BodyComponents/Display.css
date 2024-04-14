@@ -38,10 +38,10 @@
     padding: 20px;
 }
 .sub-comp-title {
+    display: flex;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    padding-left: 5vw;
     margin-top: 30px;
 }
 

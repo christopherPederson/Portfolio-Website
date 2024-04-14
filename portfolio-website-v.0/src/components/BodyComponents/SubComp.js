@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { MousePointerClick } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
 export default function SubComp(props) {
@@ -47,7 +48,10 @@ export default function SubComp(props) {
 
     return (
         <>
-            <h1 className="sub-comp-title">Read More &#8628;</h1>
+            <div className="sub-comp-title">
+                <h1>Read More</h1>
+                <MousePointerClick />
+            </div>
             <div className="sub-comp-wrapper">{generateSubDisplays()}</div>
         </>
     );
