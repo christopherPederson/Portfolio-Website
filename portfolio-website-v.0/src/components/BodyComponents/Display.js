@@ -1,5 +1,6 @@
 import MainComp from "./MainComp"
 import SubComp from "./SubComp"
+import "./Display.css"
 
 export default function Display(props) {
 

@@ -42,10 +42,10 @@
         },
         {
             "index": 5,
-            "iconURL": "Eagle.png",
-            "backgroundColor": "#FFB72C",
-            "name": "Eagle",
-            "description": "Eagle is a PCB (Printed Circuit Board) design software. It allows electronic engineers to design schematics and layout PCBs for various electronic projects.",
+            "iconURL": "LTspice.png",
+            "backgroundColor": "#FF6E6E",
+            "name": "LTspice",
+            "description": "LTspice is a circuit design software. It allows electronic engineers to design schematics for various electronic projects and visualize their behavior.",
             "show": true
         },
         {
