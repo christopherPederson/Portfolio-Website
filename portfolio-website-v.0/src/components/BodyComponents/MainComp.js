@@ -5,6 +5,14 @@ export default function MainComp(props) {
 
     const data = props.data;
 
+    const generateToolListString = () => {
+        let tempString = ""
+        data.toolList.map((tool, index) => {
+            tempString += (index > 0 ? " ◦" : "◦") + tool;
+        })
+        return tempString;
+    }
+
     import(
         process.env.PUBLIC_URL +
             "/public/assets/ProjectImages/" +
@@ -21,6 +29,7 @@ export default function MainComp(props) {
         <img src={mainImage}></img>,
         <div style={{ backgroundColor: data.color }}>
             <h1>{data.title}</h1>
+            <p>{generateToolListString()}</p>
         </div>,
     ];
 

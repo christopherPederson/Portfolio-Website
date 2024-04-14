@@ -47,7 +47,7 @@ export default function SubComp(props) {
 
     return (
         <>
-            <h1>Read More</h1>
+            <h1 className="sub-comp-title">Read More &#8628;</h1>
             <div className="sub-comp-wrapper">{generateSubDisplays()}</div>
         </>
     );

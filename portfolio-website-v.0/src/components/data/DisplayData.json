@@ -6,6 +6,7 @@
             "mainImage": "PG_PCB_MAIN.jpeg",
             "color": "#FFD700",
             "orientation": "image--left",
+            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
                     "image": "PG_PCB_SUB1.png",
@@ -35,6 +36,7 @@
             "mainImage": "RTL_MAIN.jpg",
             "color": "#2DB3EC",
             "orientation": "image--right",
+            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
                     "image": "PG_PCB_SUB1.png",
@@ -64,6 +66,7 @@
             "mainImage": "PG_WEBSITE_MAIN.png",
             "color": "#FF6E6E",
             "orientation": "image--right",
+            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
                     "image": "PG_PCB_SUB1.png",
@@ -93,6 +96,7 @@
             "mainImage": "ADDER_MAIN.jpg",
             "color": "#DC6CF8",
             "orientation": "image--left",
+            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
                     "image": "PG_PCB_SUB1.png",
