@@ -9,24 +9,24 @@
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
-                    "image": "PG_PCB_SUB1.png",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "PG_PCB--PSU.webp",
+                    "title": "PSU Prototype",
+                    "description": "This is a prototype PSU i built for the controller board. it was used for thermal tests and as a proof of concept."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "PG_PCB--THERMAL.webp",
+                    "title": "PSU Thermal Imaging",
+                    "description": "This is the thermal imaging of the PSU board to ensure it met the operating requirements of the device"
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--LAYOUT.webp",
                     "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "description": "This is the layout in fusion 360. i was responsible for generating all the schematics, tracing, and subsequent gerber files for production"
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "PG_PCB--ASPCB.webp",
+                    "title": "AirShade PCB",
+                    "description": "This is a second board i designed for a similar product but with less control systems"
                 }
             ]
         },
@@ -39,22 +39,22 @@
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 }
@@ -69,22 +69,22 @@
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 }
@@ -99,22 +99,22 @@
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "subDisplays": [
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 },
                 {
-                    "image": "PG_PCB_SUB1.png",
+                    "image": "PG_PCB--THERMAL.webp",
                     "title": "PCB Layout",
                     "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
                 }
