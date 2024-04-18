@@ -33,8 +33,8 @@ export default function SubComp(props) {
                     className="sub-display"
                     style={{ backgroundImage: `url(${subImages[index]})` }}
                 >
-                    <h1>{subDisplay.title}</h1>
-                    <div style={{ backgroundColor: data.color }}>
+                    <div className="sub-display-title-wrapper"><h1>{subDisplay.title}</h1></div>
+                    <div className="sub-display-popup" style={{ backgroundColor: data.color }}>
                         <p>{subDisplay.description}</p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function SubComp(props) {
 
     return (
         <>
-            <div className="sub-comp-title">
+            <div className="sub-comp-header">
                 <h1>Read More</h1>
                 <MousePointerClick />
             </div>
