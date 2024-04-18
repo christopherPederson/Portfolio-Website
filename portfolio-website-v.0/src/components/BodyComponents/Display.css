@@ -37,6 +37,11 @@
     text-align: center;
     padding: 20px;
 }
+.displayDescription{
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
 .sub-comp-title {
     display: flex;
     font-size: 2rem;

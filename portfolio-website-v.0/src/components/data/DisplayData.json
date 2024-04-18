@@ -8,8 +8,8 @@
             "orientation": "image--left",
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of <a href=\"\">Chris Batory<a>, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
-            "showSubDisplays": true,
+            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "showSubDisplay": true,
             "subDisplays": [
                 {
                     "image": "PG_PCB--PSU.webp",
@@ -41,8 +41,8 @@
             "orientation": "image--right",
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of <a href=\"\">Chris Batory<a>, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
-            "showSubDisplays": true,
+            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "showSubDisplay": true,
             "subDisplays": [
                 {
                     "image": "PG_PCB--THERMAL.webp",
@@ -74,8 +74,8 @@
             "orientation": "image--right",
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of <a href=\"\">Chris Batory<a>, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
-            "showSubDisplays": false,
+            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "showSubDisplay": false,
             "subDisplays": [
                 {
                     "image": "PG_PCB--THERMAL.webp",
@@ -107,8 +107,8 @@
             "orientation": "image--left",
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of <a href=\"\">Chris Batory<a>, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
-            "showSubDisplays": true,
+            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "showSubDisplay": true,
             "subDisplays": [
                 {
                     "image": "PG_PCB--THERMAL.webp",
