@@ -14,22 +14,22 @@
                 {
                     "image": "PG_PCB--PSU.webp",
                     "title": "PSU Prototype",
-                    "description": "This is a prototype PSU i built for the controller board. it was used for thermal tests and as a proof of concept."
+                    "description": "This is a prototype switching PSU I built for the controller board. It was used for thermal tests and as a proof of concept. I built many iterations of this design before I approved it."
                 },
                 {
                     "image": "PG_PCB--THERMAL.webp",
                     "title": "PSU Thermal Imaging",
-                    "description": "This is the thermal imaging of the PSU board to ensure it met the operating requirements of the device"
+                    "description": "This is the thermal imaging of the PSU board to ensure it meets the device's operating requirements. It was captured on a small FLIR camera."
                 },
                 {
                     "image": "PG_PCB--LAYOUT.webp",
                     "title": "PCB Layout",
-                    "description": "This is the layout in fusion 360. i was responsible for generating all the schematics, tracing, and subsequent gerber files for production"
+                    "description": "This is the layout in Autodesk Fusion 360. I was responsible for generating all the schematics, tracings, and subsequent gerber files for production."
                 },
                 {
                     "image": "PG_PCB--ASPCB.webp",
                     "title": "AirShade PCB",
-                    "description": "This is a second board i designed for a similar product but with less control systems"
+                    "description": "This is a second board i designed for a similar product called AirShade but it required less control systems."
                 }
             ]
         },
@@ -39,30 +39,30 @@
             "mainImage": "RTL_MAIN.jpg",
             "color": "#2DB3EC",
             "orientation": "image--right",
-            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
+            "toolList":["LTSpice","MicroCap"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "description": "During my second co-op, I embarked on an in-depth exploration of RTL (Resistor-Transistor Logic) and its integration within contemporary architectural frameworks. Motivated by this research, I undertook the ambitious task of fabricating custom logic circuits. Commencing with the development of a specialized board optimized for the characterization of individual transistors, I meticulously captured their behaviors via exhaustive data acquisition and meticulous graphing. This foundational endeavor facilitated a nuanced comprehension of the intricate relationship between base current and emitter current, crucial for grasping transistor gain dynamics. With this foundational knowledge in hand, I transitioned to the construction of essential logic gates, commencing with the pivotal NOT gate—a cornerstone for subsequent circuitry. Progressing to more sophisticated constructs, I engineered a NAND gate, delving into the complex interplay of transistors to realize intricate logical operations. Subsequently, I ventured into the realm of sequential logic, where I meticulously designed RS and D-type flip-flops. These achievements marked a significant leap into the domain of memory elements and state retention, necessitating meticulous consideration of timing constraints and signal propagation dynamics. Through these endeavors, I not only solidified my proficiency in RTL circuit design but also deepened my understanding of fundamental computer architecture principles.",
             "showSubDisplay": true,
             "subDisplays": [
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "RTL_TRANSISTOR.webp",
+                    "title": "Transistor Characterization",
+                    "description": "This is a custom characterization board. It allowed me to vary the base current and graph how the base-emitter voltage drop and collector-emitter current respond."
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "RTL_NAND.webp",
+                    "title": "NAND GATE",
+                    "description": "NAND gates are the fundamental logic component in all modern-day computer architecture. The one shown here was built using RTL by me."
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "RTL_RS_FLIPFLOP.webp",
+                    "title": "RS Flip Flop",
+                    "description": "Like the one here, an RS flip-flop circuit is used to store a single bit. It has a simple operation, only requiring a SET and RESET pin."
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "RTL_D_FLIPFLOP.webp",
+                    "title": "D Type Flip Flop",
+                    "description": "This D-type flip-flop is a digital circuit element that stores and outputs a single bit of information customarily based on the state of its input signal at a specific clock edge."
                 }
             ]
         },

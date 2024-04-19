@@ -39,7 +39,7 @@
     border-radius: 50%;
 }
 .dot--active {
-    background-color: #ff6e6e;
+    background-color: #FFD700;
 }
 .dot:hover {
     cursor: pointer;
