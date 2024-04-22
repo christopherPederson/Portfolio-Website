@@ -114,6 +114,20 @@
 .sub-display:hover .sub-display-title-wrapper {
     display: none;
 }
+.calendarWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 40vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.calendarWrapper h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
 
 @media (max-aspect-ratio: 155/100) {
     .main-comp {
