@@ -1,14 +1,29 @@
-import React, { useEffect } from "react";
-import GitHubCalendar from "./GithubCalendar";
-import "./github-calendar.css";
+import React, { useState, useEffect } from "react";
 
-const GitHubCalendarComponent = ({ username }) => {
+export default function GitHubCalendarComponent(props) {
+
+    const fetchCalendarData = async () => {
+        try {
+            const response = await fetch(
+                `https://api.bloggify.net/gh-calendar/?username=${props.username}`
+            );
+            return await response.text();
+        } catch (error) {
+            console.log(error);
+            return null; // Return null or handle error appropriately
+        }
+    };
+
     useEffect(() => {
-        new GitHubCalendar(".calendar", "christopherPederson", {
-            responsive: false,
-            global_stats: false,
-        });
-    }, [username]);
+        const printData = async () => {
+            const data = await fetchCalendarData();
+            console.log(data);
+            // Here you can set the state with the retrieved data if needed
+            // setCalendarData(data);
+        };
+
+        printData();
+    }, []);
 
     return (
         <div className="calendarWrapper">
@@ -16,6 +31,5 @@ const GitHubCalendarComponent = ({ username }) => {
             <div className="calendar">Loading data...</div>
         </div>
     );
-};
+}
 
-export default GitHubCalendarComponent;

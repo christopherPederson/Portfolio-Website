@@ -8,22 +8,23 @@ export default function SubComp(props) {
 
     const [subImages, setSubImages] = useState([]);
 
-    const importSubImages = () => {
-        let subImages = [];
-        subDisplays.forEach((subDisplay) => {
-            import(
-                process.env.PUBLIC_URL +
+    const importSubImages = async () => {
+        let importedImages = [];
+    
+        try {
+            for (const subDisplay of subDisplays) {
+                const image = await import(
+                    process.env.PUBLIC_URL +
                     "/public/assets/ProjectImages/SubImages/" +
                     subDisplay.image
-            )
-                .then((image) => {
-                    subImages.push(image.default);
-                    setSubImages(subImages);
-                })
-                .catch((error) => {
-                    console.error("Error importing image: ", error);
-                });
-        });
+                );
+                importedImages.push(image.default);
+            }
+    
+            setSubImages(importedImages);
+        } catch (error) {
+            console.error("Error importing images: ", error);
+        }
     };
     const generateSubDisplays = () => {
         return subDisplays.map((subDisplay, index) => {
