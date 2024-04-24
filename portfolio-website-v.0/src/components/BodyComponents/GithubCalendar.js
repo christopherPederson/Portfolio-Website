@@ -132,9 +132,10 @@ module.exports = function GitHubCalendar (container, username, options) {
                 let width = svg.getAttribute("width")
                 let height = svg.getAttribute("height")
                 // Remove height property entirely
-                svg.removeAttribute("height")
+                // svg.removeAttribute("height")
                 // Width property should be set to 100% to fill entire container
                 svg.setAttribute("width", "100%")
+                svg.setAttribute("height", svg.width)
                 // Add a viewBox property based on the former width/height
                 svg.setAttribute("viewBox", "0 0 " + width + " " + height)
             }

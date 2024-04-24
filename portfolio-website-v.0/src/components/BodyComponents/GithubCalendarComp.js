@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react';
-import GitHubCalendar from './GithubCalendar';
-import './github-calendar-responsive.css';
+import React, { useEffect } from "react";
+import GitHubCalendar from "./GithubCalendar";
+import "./github-calendar-responsive.css";
 
-const GitHubCalendarComponent = ({ username }) => {
+export default function GitHubCalendarComponent(username) {
     useEffect(() => {
-        new GitHubCalendar('.calendar', "christopherPederson", { responsive: true });
+        new GitHubCalendar(".calendar", "christopherPederson", {
+            responsive: true,
+            global_stats: false,
+            tooltips:true,
+        });
     }, [username]);
 
     return (
-        <div className="calendar">
-            Loading data...
+        <div className="calendarWrapper">
+            <div className="calendar">Loading data...</div>
         </div>
     );
-};
-
-export default GitHubCalendarComponent;
+}
