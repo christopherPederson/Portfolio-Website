@@ -39,6 +39,7 @@ export default function SoftwareWindow() {
     // runtime events
     useEffect(() => {
         setPanes(paneData.panes);
+        setPanes((prevPanes) => shuffleArray(prevPanes));
 
         // const intervalId = setInterval(() => {
         //     setPanes((prevPanes) => shuffleArray(prevPanes));

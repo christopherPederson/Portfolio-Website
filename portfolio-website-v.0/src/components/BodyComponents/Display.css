@@ -55,6 +55,9 @@
     font-weight: 700;
     color: white;
 }
+.sub-comp-header .pointerIcon{
+    height: 2rem;
+}
 
 .sub-comp-wrapper {
     display: grid;
@@ -139,5 +142,8 @@
     .sub-comp-wrapper {
         grid-template-columns: repeat(1, 1fr);
         height: 200vh;
+    }
+    .sub-comp-header .pointerIcon{
+        display: none;
     }
 }
