@@ -7,7 +7,7 @@
 }
 
 .ContributionCalendar-day {
-    padding-top: 100%;
+    width: 20px
 }
 
 .ContributionCalendar-day[data-level='0'] {

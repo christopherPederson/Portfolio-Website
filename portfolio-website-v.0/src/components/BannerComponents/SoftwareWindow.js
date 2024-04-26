@@ -40,11 +40,11 @@ export default function SoftwareWindow() {
     useEffect(() => {
         setPanes(paneData.panes);
 
-        const intervalId = setInterval(() => {
-            setPanes((prevPanes) => shuffleArray(prevPanes));
-        }, 2000);
+        // const intervalId = setInterval(() => {
+        //     setPanes((prevPanes) => shuffleArray(prevPanes));
+        // }, 2000);
 
-        return () => clearInterval(intervalId); // Clear interval on component unmount or re-render
+        // return () => clearInterval(intervalId); // Clear interval on component unmount or re-render
     }, []); // Run effect only once on component mount
 
     return (

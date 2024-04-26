@@ -49,7 +49,7 @@ export default function SubComp(props) {
     return (
         <>
             <div className="sub-comp-header">
-                <h1>Read More</h1>
+                <h1>Hover to Read More</h1>
                 <MousePointerClick />
             </div>
             <div className="sub-comp-wrapper">{generateSubDisplays()}</div>

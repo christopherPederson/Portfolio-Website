@@ -126,19 +126,19 @@ module.exports = function GitHubCalendar (container, username, options) {
             setTimeout(fetchCalendar, 500)
         } else {
             // If options includes responsive, SVG element has to be manipulated to be made responsive
-            if (options.responsive === true) {
-                let svg = cal.querySelector("table.js-calendar-graph-table")
-                // Get the width/height properties and use them to create the viewBox
-                let width = svg.getAttribute("width")
-                let height = svg.getAttribute("height")
-                // Remove height property entirely
-                // svg.removeAttribute("height")
-                // Width property should be set to 100% to fill entire container
-                svg.setAttribute("width", "100%")
-                svg.setAttribute("height", svg.width)
-                // Add a viewBox property based on the former width/height
-                svg.setAttribute("viewBox", "0 0 " + width + " " + height)
-            }
+            // if (options.responsive === true) {
+            //     let svg = cal.querySelector("table.js-calendar-graph-table")
+            //     // Get the width/height properties and use them to create the viewBox
+            //     let width = svg.getAttribute("width")
+            //     let height = svg.getAttribute("height")
+            //     // Remove height property entirely
+            //     // svg.removeAttribute("height")
+            //     // Width property should be set to 100% to fill entire container
+            //     svg.setAttribute("width", "100%")
+            //     svg.setAttribute("height", svg.width)
+            //     // Add a viewBox property based on the former width/height
+            //     svg.setAttribute("viewBox", "0 0 " + width + " " + height)
+            // }
 
             if (options.global_stats !== false) {
                 let parsed = parse(cal.innerHTML)

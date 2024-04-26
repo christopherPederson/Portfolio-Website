@@ -2,11 +2,14 @@
     width: 100vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .main-comp {
     height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 30px;
 
     display: flex;
     justify-content: center;
@@ -39,15 +42,18 @@
 }
 .displayDescription{
     font-size: 1rem;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+.displayDescription h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 .sub-comp-header {
     display: flex;
     font-size: 2rem;
     font-weight: 700;
     color: white;
-    margin-top: 30px;
 }
 
 .sub-comp-wrapper {
