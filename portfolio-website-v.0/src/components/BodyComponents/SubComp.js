@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MousePointerClick } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -7,6 +7,7 @@ export default function SubComp(props) {
     const subDisplays = data.subDisplays;
 
     const [subImages, setSubImages] = useState([]);
+    const popupRef = useRef([]);
 
     const importSubImages = () => {
         let subImages = [];
@@ -25,8 +26,16 @@ export default function SubComp(props) {
                 });
         });
     };
+    const resizeFont = (text, index) => {
+        const length = text.length;
+        const popupWidth = popupRef.current[index].offsetWidth;
+
+        const fontSize = Math.floor((popupWidth / length) * 1.5);
+        return fontSize;
+    }
     const generateSubDisplays = () => {
         return subDisplays.map((subDisplay, index) => {
+            const fontSize = resizeFont(subDisplay.description, index);
             return (
                 <div
                     key={uuidv4()}
@@ -34,7 +43,7 @@ export default function SubComp(props) {
                     style={{ backgroundImage: `url(${subImages[index]})` }}
                 >
                     <div className="sub-display-title-wrapper"><h1>{subDisplay.title}</h1></div>
-                    <div className="sub-display-popup" style={{ backgroundColor: data.color }}>
+                    <div className="sub-display-popup" ref={popupRef[index]} style={{ backgroundColor: data.color, fontSize: `${fontSize}px` }}>
                         <p>{subDisplay.description}</p>
                     </div>
                 </div>
