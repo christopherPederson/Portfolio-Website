@@ -72,31 +72,11 @@
             "mainImage": "PG_WEBSITE_MAIN.png",
             "color": "#FF6E6E",
             "orientation": "image--right",
-            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
+            "toolList":["HTML","CSS","JavaScript","TailwindCSS","Figma"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "description": "At Plasmagear, I spearheaded the development of a corporate website designed to showcase the company's research and development services. Leveraging my expertise in vanilla HTML, CSS, and JavaScript, I crafted a user-friendly and maintainable platform, specifically engineered to facilitate seamless transitions for future developers. This website not only attracted numerous clients but also set a new standard for professionalism, surpassing the capabilities of typical no-code websites. Check it out at www.Plasmagear.ca!",
             "showSubDisplay": false,
             "subDisplays": [
-                {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
-                },
-                {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
-                },
-                {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
-                },
-                {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
-                }
             ]
         },
         {
@@ -105,30 +85,30 @@
             "mainImage": "ADDER_MAIN.jpg",
             "color": "#DC6CF8",
             "orientation": "image--left",
-            "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
+            "toolList":["LTSpice","Fusion 360","MicroCap"],
             "showDescription": true,
-            "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
+            "description": "Continuing my research in RTL logic, I developed an 8-bit binary calculator using individual transistors within the RTL framework. My initial step involved creating a full adder on a perf board as a proof of concept to test the fundamental components. Leveraging Fusion 360, I then designed and produced PCBs, incorporating a custom controller circuit tailored to enhance functionality. Currently, I am in the process of completely redesigning the full adder circuit to implement it with Surface-Mount Technology (SMT) components, which promises improved efficiency and a more compact design. This project not only deepened my expertise in circuit design but also equipped me with practical skills in modern manufacturing technologies.",
             "showSubDisplay": true,
             "subDisplays": [
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "ADDER_BOARD1.webp",
+                    "title": "Initial Prototype",
+                    "description": "This is the first prototype of the full adder circuit. It was built on a perf board and used to test the circuit and allowed me to decide on components"
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "ADDER_BOARD2.webp",
+                    "title": "First PCB Layout",
+                    "description": "This is a photo of the PCB layout for the full adder circuit. It was designed in Autodesk Fusion 360 and later produced for testing."
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "ADDER_CONTROL_BOARD.webp",
+                    "title": "Controller Board",
+                    "description": "The adder required a central controller board to provide input. this is my design for that board. it was later produced and tested."
                 },
                 {
-                    "image": "PG_PCB--THERMAL.webp",
-                    "title": "PCB Layout",
-                    "description": "this is a functional prototype of the PSU board for the automotive controller. it acts as a proof of concept and was later used for thermal tests."
+                    "image": "ADDER_BOARD3.webp",
+                    "title": "Second PCB Layout",
+                    "description": "This is the most recent run of boards with modifications to the tracings and components. it has recently passed testing."
                 }
             ]
         }
