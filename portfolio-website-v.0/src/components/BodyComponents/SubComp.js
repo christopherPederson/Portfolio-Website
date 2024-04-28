@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, createRef } from "react";
 import { MousePointerClick } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -7,7 +7,7 @@ export default function SubComp(props) {
     const subDisplays = data.subDisplays;
 
     const [subImages, setSubImages] = useState([]);
-    const popupRef = useRef([]);
+    const [popupRefs, setPopupRefs] = useState([]);
 
     const importSubImages = () => {
         let subImages = [];
@@ -27,12 +27,39 @@ export default function SubComp(props) {
         });
     };
     const resizeFont = (text, index) => {
-        const length = text.length;
-        const popupWidth = popupRef.current[index].offsetWidth;
 
-        const fontSize = Math.floor((popupWidth / length) * 1.5);
-        return fontSize;
-    }
+        if (popupRefs[index] && popupRefs[index].current) {
+            const popupWidth = popupRefs[index].current.offsetWidth;
+            const font = "1px Julius Sans One";
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
+
+            // Set the font (syntax similar to CSS: "font-size font-family")
+            context.font = font;
+
+            // Measure the text
+            const measurement = context.measureText(text);
+
+            const textMinWidth = measurement.width;
+
+            return Math.floor((popupWidth*3)/textMinWidth); // Return the font size (in px)
+        }
+
+        // if (popupRefs[index] && popupRefs[index].current) {
+        //     // Create a canvas element
+        //     const canvas = document.createElement("canvas");
+        //     const context = canvas.getContext("2d");
+
+        //     // Set the font to the context
+        //     context.font = font;
+
+        //     const length = text.length;
+        //     const popupWidth = popupRefs[index].current.offsetWidth;
+        //     const fontSize = Math.floor((popupWidth / length) * 8);
+        //     return fontSize;
+        // }
+        return 16; // Return a default font size if refs are not ready
+    };
     const generateSubDisplays = () => {
         return subDisplays.map((subDisplay, index) => {
             const fontSize = resizeFont(subDisplay.description, index);
@@ -42,8 +69,17 @@ export default function SubComp(props) {
                     className="sub-display"
                     style={{ backgroundImage: `url(${subImages[index]})` }}
                 >
-                    <div className="sub-display-title-wrapper"><h1>{subDisplay.title}</h1></div>
-                    <div className="sub-display-popup" ref={popupRef[index]} style={{ backgroundColor: data.color, fontSize: `${fontSize}px` }}>
+                    <div className="sub-display-title-wrapper">
+                        <h1>{subDisplay.title}</h1>
+                    </div>
+                    <div
+                        className="sub-display-popup"
+                        ref={popupRefs[index]}
+                        style={{
+                            backgroundColor: data.color,
+                            fontSize: `${fontSize}px`,
+                        }}
+                    >
                         <p>{subDisplay.description}</p>
                     </div>
                 </div>
@@ -53,7 +89,11 @@ export default function SubComp(props) {
 
     useEffect(() => {
         importSubImages();
-    }, []);
+        // Initialize refs only when subDisplays changes and is not empty
+        if (subDisplays.length > 0) {
+            setPopupRefs(subDisplays.map(() => createRef()));
+        }
+    }, [subDisplays]);
 
     return (
         <>
