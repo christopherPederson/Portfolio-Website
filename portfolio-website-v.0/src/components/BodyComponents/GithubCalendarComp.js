@@ -6,7 +6,7 @@ export default function GitHubCalendarComponent(username) {
     useEffect(() => {
         new GitHubCalendar(".calendar", "christopherPederson", {
             responsive: true,
-            global_stats: false,
+            global_stats: true,
             tooltips:true,
         });
     }, [username]);

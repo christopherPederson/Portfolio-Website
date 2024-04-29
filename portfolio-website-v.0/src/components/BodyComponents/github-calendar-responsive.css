@@ -6,10 +6,6 @@
   --color-calendar-graph-day-L4-bg: #0a4208;
 }
 
-.ContributionCalendar-day {
-    width: 20px
-}
-
 .ContributionCalendar-day[data-level='0'] {
     background-color: var(--color-calendar-graph-day-bg);
 }

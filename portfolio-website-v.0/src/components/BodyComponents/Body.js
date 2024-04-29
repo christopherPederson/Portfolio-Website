@@ -13,7 +13,7 @@ export default function Body() {
             <ReferencesSlider />
             <Display key={uuidv4()} data={data.displays[1]} />
             <Display key={uuidv4()} data={data.displays[2]} />
-            {/* <GithubCalendarComp /> */}
+            <GithubCalendarComp />
             <Display key={uuidv4()} data={data.displays[3]} />
         </div>
     )
