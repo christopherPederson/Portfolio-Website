@@ -1,0 +1,10 @@
+#calendarWrapper {
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
