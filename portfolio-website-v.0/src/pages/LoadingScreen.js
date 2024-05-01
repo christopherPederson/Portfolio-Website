@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./LoadingScreen.css";
 
 export default function LoadingScreen(props) {
@@ -12,20 +12,25 @@ export default function LoadingScreen(props) {
         "Mechanical",
         "PCB Development",
     ];
-    const [index, setIndex] = useState(
-        Math.floor(Math.random() * Keywords.length)
-    );
+    const [index, setIndex] = useState(Math.floor(Math.random() * Keywords.length));
+    const textRef = useRef(null);
 
     useEffect(() => {
-        // Define the interval inside the effect
-        const interval = setInterval(() => {
-            // Update index using a function to ensure we always have the latest value
-            setIndex(currentIndex => (currentIndex + 1) % Keywords.length);
-        }, 1500);
+        const textElement = textRef.current;
+        const handleAnimationIteration = () => {
+            setIndex(prevIndex => (prevIndex + 1) % Keywords.length);
+        };
 
-        // Return a cleanup function that clears the interval
-        return () => clearInterval(interval);
-    }, []); // Remove 'index' from the dependency array
+        if (textElement) {
+            textElement.addEventListener('animationiteration', handleAnimationIteration);
+        }
+
+        return () => {
+            if (textElement) {
+                textElement.removeEventListener('animationiteration', handleAnimationIteration);
+            }
+        };
+    }, []);
 
     if (!props.isLoading) {
         return null;
@@ -33,9 +38,9 @@ export default function LoadingScreen(props) {
 
     return (
         <div className="loading-screen">
-            <h1>Loading Portfolio . . . </h1>
+            <h1>. . . Loading Portfolio . . .</h1>
             <div className="textWrapper">
-                <h2 className="text">{Keywords[index]}</h2>
+                <h2 ref={textRef} className="text">{Keywords[index]}</h2>
             </div>
         </div>
     );
