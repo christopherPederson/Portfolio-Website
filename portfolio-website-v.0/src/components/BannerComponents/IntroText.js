@@ -10,7 +10,6 @@ export default function IntroText() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
-                console.log(entries[0].isIntersecting);
                 setIsVisible(entries[0].isIntersecting);
             }, // Callback function
             {
