@@ -17,7 +17,7 @@ export default function SubComp(props) {
                     style={{ backgroundImage: `url(${subImages[index]})` }}
                 >
                     <div className="sub-display-title-wrapper">
-                        <h1>{subDisplay.title}</h1>
+                        <h1>&uArr; {subDisplay.title} &uArr;</h1>
                     </div>
                     <div
                         className="sub-display-popup"

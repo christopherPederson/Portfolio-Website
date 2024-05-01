@@ -26,7 +26,7 @@ export default function MainComp(props) {
         });
 
     const contentAry = [
-        <img src={mainImage}></img>,
+        <img src={mainImage} loading="lazy"></img>,
         <div style={{ backgroundColor: data.color }}>
             <h1>{data.title}</h1>
             <p>{generateToolListString()}</p>

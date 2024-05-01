@@ -19,3 +19,18 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #a2a2a2;
   }
+
+/* Initial state: element is out of view */
+.fadeIn{
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.notVisible{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+/* State when the element is visible */
+.isVisible {
+  transform: translateY(0);
+  opacity: 1;
+}
