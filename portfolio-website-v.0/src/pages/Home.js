@@ -2,6 +2,7 @@ import Banner from "../components/BannerComponents/Banner";
 import Body from "../components/BodyComponents/Body";
 import { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen';
+import Footer from '../components/FooterComponents/Footer';
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +18,7 @@ export default function Home() {
             <LoadingScreen isLoading={isLoading}/>
             <Banner />
             <Body />
+            <Footer />
         </>
     );
 }
