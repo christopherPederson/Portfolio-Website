@@ -36,7 +36,7 @@ export default function IntroText() {
             className={`flex flex-col justify-evenly p-2 min-h-screen fadeIn ${isVisible ? "isVisible" : "notVisible"}`}
         >
             <h1 className="text-5xl">
-                Hi, im Chris. Welcome to my portfolio website...
+                Hi, i'm Chris. Welcome to my portfolio website...
             </h1>
             <div>
                 <p className="text-2xl">
