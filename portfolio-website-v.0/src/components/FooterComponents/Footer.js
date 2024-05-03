@@ -33,6 +33,8 @@ export default function Footer() {
         const columns = Math.floor(footerWidth / 100); // min width 100px per tile
         const rows = Math.ceil(contentHeight / 100);
 
+        console.log(`Columns: ${columns}, Rows: ${rows}`);
+
         for (let i = 0; i <= columns * rows; i++) {
             const tileColor =
                 i % 2 === 0
@@ -54,18 +56,17 @@ export default function Footer() {
 
     useEffect(() => {
         // Ensure the component is mounted and the refs are set
-        if (footerMainRef.current && footerContentRef.current) {
-            setTiles(generateTiles());
-        }
+        // if (footerMainRef.current && footerContentRef.current) {
+        //     setTiles(generateTiles());
+        // }
     }, []); // Empty dependency array means this effect runs only once after initial mount
 
     return (
         <div id="footer">
             <div ref={footerMainRef} id="footerMain">
-                {tiles}
                 <div ref={footerContentRef} id="footerMain_content">
                     <h2>You made it this far, Get in Contact</h2>
-                    <div id="footerMain_content_icons">
+                    <div id="footerMain_icons">
                         {LinkedIconData.icons.map((icon, index) => (
                             <LinkedIcon
                                 key={uuidv4()}
