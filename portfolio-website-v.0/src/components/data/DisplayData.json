@@ -2,7 +2,7 @@
     "displays": [
         {
             "name": "PG_PCB",
-            "title": "Automotive Controller PCBA",
+            "title": "Automotive PCB",
             "mainImage": "PG_PCB_MAIN.jpeg",
             "color": "#FFD700",
             "orientation": "image--left",
@@ -29,7 +29,7 @@
                 {
                     "image": "PG_PCB--ASPCB.webp",
                     "title": "AirShade PCB",
-                    "description": "This is a second board i designed for a similar product called AirShade but it required less control systems."
+                    "description": "This second board I designed was a scaled-down version for a similar product called AirShade that required less demanding control subsystems."
                 }
             ]
         },
@@ -41,7 +41,7 @@
             "orientation": "image--right",
             "toolList":["LTSpice","MicroCap"],
             "showDescription": true,
-            "description": "During my second co-op, I deeply explored RTL (Resistor-Transistor Logic) and its integration into modern architecture frameworks. This research led me to design custom logic circuits, starting with a specialized board for transistor characterization. I captured and graphed their behaviors to understand the relationship between base and emitter currents, crucial for analyzing transistor gain dynamics. Using this knowledge, I built essential logic gates, including the NOT and NAND gates, and advanced to designing RS and D-type flip-flops. These projects enhanced my skills in RTL design and broadened my grasp of computer architecture fundamentals.",
+            "description": "I am fascinated by retro electronics.  During my second co-op, I deeply explored RTL (Resistor-Transistor Logic) and its integration into modern architecture frameworks. This research led me to design custom logic circuits, starting with a specialized board for transistor characterization. I captured and graphed their behaviors to understand the relationship between base and collector currents, crucial for analyzing transistor gain dynamics. Using this knowledge, I built essential logic gates right down to individual component level, including the NOT and NAND gates, and advanced to designing RS and D-type flip-flops. These projects enhanced my skills in RTL design and broadened my grasp of computer architecture fundamentals.",
             "showSubDisplay": true,
             "subDisplays": [
                 {
@@ -72,7 +72,7 @@
             "mainImage": "PG_WEBSITE_MAIN.png",
             "color": "#FF6E6E",
             "orientation": "image--right",
-            "toolList":["HTML","CSS","JavaScript","TailwindCSS","Figma"],
+            "toolList":["HTML","CSS","JavaScript","TailwindCSS"],
             "showDescription": true,
             "description": "At Plasmagear, I spearheaded the development of a corporate website designed to showcase the company's research and development services. Leveraging my expertise in vanilla HTML, CSS, and JavaScript, I crafted a user-friendly and maintainable platform, specifically engineered to facilitate seamless transitions for future developers. This website not only attracted numerous clients but also set a new standard for professionalism, surpassing the capabilities of typical no-code websites. Check it out at www.Plasmagear.ca!",
             "showSubDisplay": false,
@@ -109,6 +109,72 @@
                     "image": "ADDER_BOARD3.webp",
                     "title": "Second PCB Layout",
                     "description": "This is the most recent run of boards with modifications to the tracings and components. it has recently passed testing."
+                }
+            ]
+        },
+        {
+            "name": "PG_MECH",
+            "title": "Mechanical Design and CAD",
+            "mainImage": "PG_MECH_MAIN.webp",
+            "color": "#305DD0",
+            "orientation": "image--left",
+            "toolList":["Fusion 360","SolidWorks"],
+            "showDescription": true,
+            "description": "During my time at Plasmagear, I was solely responsible for PCB development and the creation of mechanical forms. This encompassed meticulously constructing CAD models from scratch using Autodesk Fusion 360. Additionally, I led the design process for membrane switch panels and the plastic forms, ensuring their functionality and manufacturability through injection molding techniques. Rigorous testing procedures, including crash tests, smoke tests, and particulate filtration tests, were conducted to guarantee the quality and durability of the components. ",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "PG_MECH_AC_CAD.webp",
+                    "title": "AirClenz CAD Model",
+                    "description": "This is a photo of the AirClenz mechanical case in Fusion 360; this iteration used a time of flight distance measurement tool for activation. This was eventually replaced with a panel interface."
+                },
+                {
+                    "image": "PG_MECH_AS_CAD.webp",
+                    "title": "AirShade CAD Model",
+                    "description": "This is a photo of the AirShade mechanical case in Fusion 360 I designed this and it was later used as a reference for manufacturing the final prototypes."
+                },
+                {
+                    "image": "PG_MECH_AC.webp",
+                    "title": "AirClenz Prototype",
+                    "description": "This is the final AirClenz prototype mounted inside a demo bus for testing and configuration purposes. It was used to test the device's functionality and durability."
+                },
+                {
+                    "image": "PG_MECH_AS.webp",
+                    "title": "AirShade Prototype",
+                    "description": "This is the final AirShade prototype mounted inside a demo bus for testing and configuration purposes. It offered the team insights into future design changes and improvements."
+                }
+            ]
+        },
+        {
+            "name": "PG_MECH",
+            "title": "Mechanical Design and CAD",
+            "mainImage": "PG_MECH_MAIN.webp",
+            "color": "#305DD0",
+            "orientation": "image--left",
+            "toolList":["Fusion 360","SolidWorks"],
+            "showDescription": true,
+            "description": "During my time at Plasmagear, I was solely responsible for PCB development and the creation of mechanical forms. This encompassed meticulously constructing CAD models from scratch using Autodesk Fusion 360. Additionally, I led the design process for membrane switch panels and the plastic forms, ensuring their functionality and manufacturability through injection molding techniques. Rigorous testing procedures, including crash tests, smoke tests, and particulate filtration tests, were conducted to guarantee the quality and durability of the components. ",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "PG_MECH_AC_CAD.webp",
+                    "title": "AirClenz CAD Model",
+                    "description": "This is a photo of the AirClenz mechanical case in Fusion 360; this iteration used a time of flight distance measurement tool for activation. This was eventually replaced with a panel interface."
+                },
+                {
+                    "image": "PG_MECH_AS_CAD.webp",
+                    "title": "AirShade CAD Model",
+                    "description": "This is a photo of the AirShade mechanical case in Fusion 360 I designed this and it was later used as a reference for manufacturing the final prototypes."
+                },
+                {
+                    "image": "PG_MECH_AC.webp",
+                    "title": "AirClenz Prototype",
+                    "description": "This is the final AirClenz prototype mounted inside a demo bus for testing and configuration purposes. It was used to test the device's functionality and durability."
+                },
+                {
+                    "image": "PG_MECH_AS.webp",
+                    "title": "AirShade Prototype",
+                    "description": "This is the final AirShade prototype mounted inside a demo bus for testing and configuration purposes. It offered the team insights into future design changes and improvements."
                 }
             ]
         }

@@ -140,11 +140,17 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .main-comp div{
+        font-size: 1.5rem;
+    }
     .sub-comp-wrapper {
         grid-template-columns: repeat(1, 1fr);
         height: 200vh;
     }
     .sub-comp-header .pointerIcon{
         display: none;
+    }
+    .sub-comp-wrapper{
+        height: 200vh;
     }
 }
