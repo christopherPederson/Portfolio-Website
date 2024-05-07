@@ -16,6 +16,8 @@ export default function Body() {
             <GithubCalendarComp username="christopherPederson"/>
             <Display key={uuidv4()} data={data.displays[3]} />
             <Display key={uuidv4()} data={data.displays[4]} />
+            <Display key={uuidv4()} data={data.displays[5]} />
+            <Display key={uuidv4()} data={data.displays[6]} />
         </div>
     )
 }

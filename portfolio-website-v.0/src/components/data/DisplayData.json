@@ -117,7 +117,7 @@
             "title": "Mechanical Design and CAD",
             "mainImage": "PG_MECH_MAIN.webp",
             "color": "#305DD0",
-            "orientation": "image--left",
+            "orientation": "image--right",
             "toolList":["Fusion 360","SolidWorks"],
             "showDescription": true,
             "description": "During my time at Plasmagear, I was solely responsible for PCB development and the creation of mechanical forms. This encompassed meticulously constructing CAD models from scratch using Autodesk Fusion 360. Additionally, I led the design process for membrane switch panels and the plastic forms, ensuring their functionality and manufacturability through injection molding techniques. Rigorous testing procedures, including crash tests, smoke tests, and particulate filtration tests, were conducted to guarantee the quality and durability of the components. ",
@@ -146,35 +146,68 @@
             ]
         },
         {
-            "name": "PG_MECH",
-            "title": "Mechanical Design and CAD",
-            "mainImage": "PG_MECH_MAIN.webp",
-            "color": "#305DD0",
+            "name": "SPOTR",
+            "title": "Spot-R Monitoring System",
+            "mainImage": "SPOTR_MAIN.gif",
+            "color": "#00CED1",
             "orientation": "image--left",
-            "toolList":["Fusion 360","SolidWorks"],
+            "toolList":["Fusion 360","C","C++","Python","LTSpice"],
             "showDescription": true,
-            "description": "During my time at Plasmagear, I was solely responsible for PCB development and the creation of mechanical forms. This encompassed meticulously constructing CAD models from scratch using Autodesk Fusion 360. Additionally, I led the design process for membrane switch panels and the plastic forms, ensuring their functionality and manufacturability through injection molding techniques. Rigorous testing procedures, including crash tests, smoke tests, and particulate filtration tests, were conducted to guarantee the quality and durability of the components. ",
+            "description": "In 2022, I co-founded Spot-R to address the challenge students face in finding study areas. We developed a non-invasive, centralized system that provides real-time occupancy data using passive infrared (PIR) sensors. We performed rigorous testing with various sensors and even programming Zilog PIR microcontrollers using their IDE software. Our infrastructure was then able to upload this information to an AWS server via the ESP8266 platform. This solution aimed to empower students to optimize their study space usage. However, we found problems with the PIR approach which made the project not viable.",
             "showSubDisplay": true,
             "subDisplays": [
                 {
-                    "image": "PG_MECH_AC_CAD.webp",
-                    "title": "AirClenz CAD Model",
-                    "description": "This is a photo of the AirClenz mechanical case in Fusion 360; this iteration used a time of flight distance measurement tool for activation. This was eventually replaced with a panel interface."
+                    "image": "SPOTR_PY.webp",
+                    "title": "Data Collection Script",
+                    "description": "This is a Python script I wrote to analyze serial data from the Zilog development board on device activation. It allowed me to set limits on activation tolerances and graph our results. "
                 },
                 {
-                    "image": "PG_MECH_AS_CAD.webp",
-                    "title": "AirShade CAD Model",
-                    "description": "This is a photo of the AirShade mechanical case in Fusion 360 I designed this and it was later used as a reference for manufacturing the final prototypes."
+                    "image": "SPOTR_PROTOTYPE.webp",
+                    "title": "Prototype Device",
+                    "description": "This is a 3D-printed prototype I designed for the wall-mounted variant. It serves as a proof of concept and allows us to gauge sensor activation in a mounted state. "
                 },
                 {
-                    "image": "PG_MECH_AC.webp",
-                    "title": "AirClenz Prototype",
-                    "description": "This is the final AirClenz prototype mounted inside a demo bus for testing and configuration purposes. It was used to test the device's functionality and durability."
+                    "image": "SPOTR_ESP.webp",
+                    "title": "ESP 8266 Chip",
+                    "description": "I wrote a script allowing us to transmit activation data from the PIR sensor over Wi-Fi to an AWS server, where users could query it. This involved some reasonably advanced C++ architecture. "
                 },
                 {
-                    "image": "PG_MECH_AS.webp",
-                    "title": "AirShade Prototype",
-                    "description": "This is the final AirShade prototype mounted inside a demo bus for testing and configuration purposes. It offered the team insights into future design changes and improvements."
+                    "image": "SPOTR_RESULTS.webp",
+                    "title": "PIR Results",
+                    "description": "We performed hundreds of tests using various PIR sensors to find one capable of surveying a large study area. This ultimately led us to decide that any low-cost option would not be viable. "
+                }
+            ]
+        },
+        {
+            "name": "PROJ",
+            "title": "Spot-R Monitoring System",
+            "mainImage": "PROJ_MAIN.webp",
+            "color": "#00CED1",
+            "orientation": "image--right",
+            "toolList":["Fusion 360","C","C++","Python","LTSpice"],
+            "showDescription": false,
+            "description": "",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "PROJ_GUILLOTINE.webp",
+                    "title": "Data Collection Script",
+                    "description": "This is a Python script I wrote to analyze serial data from the Zilog development board on device activation. It allowed me to set limits on activation tolerances and graph our results. "
+                },
+                {
+                    "image": "PROJ_PROTOTYPE.webp",
+                    "title": "Prototype Device",
+                    "description": "This is a 3D-printed prototype I designed for the wall-mounted variant. It serves as a proof of concept and allows us to gauge sensor activation in a mounted state. "
+                },
+                {
+                    "image": "PROJ_ESP.webp",
+                    "title": "ESP 8266 Chip",
+                    "description": "I wrote a script allowing us to transmit activation data from the PIR sensor over Wi-Fi to an AWS server, where users could query it. This involved some reasonably advanced C++ architecture. "
+                },
+                {
+                    "image": "PROJ_RESULTS.webp",
+                    "title": "PIR Results",
+                    "description": "We performed hundreds of tests using various PIR sensors to find one capable of surveying a large study area. This ultimately led us to decide that any low-cost option would not be viable. "
                 }
             ]
         }
