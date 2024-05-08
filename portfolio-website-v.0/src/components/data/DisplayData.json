@@ -182,32 +182,32 @@
             "name": "PROJ",
             "title": "Spot-R Monitoring System",
             "mainImage": "PROJ_MAIN.webp",
-            "color": "#00CED1",
+            "color": "#CAE755",
             "orientation": "image--right",
-            "toolList":["Fusion 360","C","C++","Python","LTSpice"],
+            "toolList":["Fusion 360","Java"],
             "showDescription": false,
             "description": "",
             "showSubDisplay": true,
             "subDisplays": [
                 {
                     "image": "PROJ_GUILLOTINE.webp",
-                    "title": "Data Collection Script",
-                    "description": "This is a Python script I wrote to analyze serial data from the Zilog development board on device activation. It allowed me to set limits on activation tolerances and graph our results. "
+                    "title": "Full Scale Guillotine",
+                    "description": "This is a 14-ft full-sized guillotine I built as part of a high school project. The blade was made of half inch of steel and weighed over 30 lbs. I have a wealth of knowledge in wood and metalworking."
                 },
                 {
-                    "image": "PROJ_PROTOTYPE.webp",
-                    "title": "Prototype Device",
-                    "description": "This is a 3D-printed prototype I designed for the wall-mounted variant. It serves as a proof of concept and allows us to gauge sensor activation in a mounted state. "
+                    "image": "PROJ_3D_PRINT.webp",
+                    "title": "FDM Experience",
+                    "description": "This is a 3D-printed adapter for an FLIR imager. I have owned and operated 3D printers for over six years and have experience with low-end and high-end FDM machines."
                 },
                 {
-                    "image": "PROJ_ESP.webp",
-                    "title": "ESP 8266 Chip",
-                    "description": "I wrote a script allowing us to transmit activation data from the PIR sensor over Wi-Fi to an AWS server, where users could query it. This involved some reasonably advanced C++ architecture. "
+                    "image": "PROJ_JAVA.webp",
+                    "title": "Java Sorting Algorithm",
+                    "description": "I wrote this insertion sort algorithm using JavaScript as a demo for students I was tutoring at the time. Although I have some experience with Java, it is not my preferred language."
                 },
                 {
-                    "image": "PROJ_RESULTS.webp",
-                    "title": "PIR Results",
-                    "description": "We performed hundreds of tests using various PIR sensors to find one capable of surveying a large study area. This ultimately led us to decide that any low-cost option would not be viable. "
+                    "image": "PROJ_EROR.webp",
+                    "title": "Public Speaking",
+                    "description": "A team of students and I were invited to speak at the Young Founders Summit Asia about some research we were doing involving semiconductors. It was a great experience, and I enjoyed speaking on stage."
                 }
             ]
         }
