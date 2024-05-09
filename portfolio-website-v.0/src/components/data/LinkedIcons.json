@@ -23,7 +23,7 @@
         },{
             "name": "CV",
             "iconURL": "CVIcon.png",
-            "link":"https://skills-n-stuff.com/public/assets/PDF's/CV.pdf",
+            "link":"https://skillsnstuff.com/assets/PDF's/CV.pdf",
             "mailTo": false,
             "show": true
         }
