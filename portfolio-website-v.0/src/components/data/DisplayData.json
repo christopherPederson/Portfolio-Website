@@ -118,7 +118,7 @@
             "mainImage": "PG_MECH_MAIN.webp",
             "color": "#305DD0",
             "orientation": "image--right",
-            "toolList":["Fusion 360","SolidWorks"],
+            "toolList":["Fusion 360","Solid Edge"],
             "showDescription": true,
             "description": "During my time at Plasmagear, I was solely responsible for PCB development and the creation of mechanical forms. This encompassed meticulously constructing CAD models from scratch using Autodesk Fusion 360. Additionally, I led the design process for membrane switch panels and the plastic forms, ensuring their functionality and manufacturability through injection molding techniques. Rigorous testing procedures, including crash tests, smoke tests, and particulate filtration tests, were conducted to guarantee the quality and durability of the components. ",
             "showSubDisplay": true,
