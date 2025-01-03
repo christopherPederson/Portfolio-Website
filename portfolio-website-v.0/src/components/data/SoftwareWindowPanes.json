@@ -86,7 +86,7 @@
             "backgroundColor": "#FFD700",
             "name": "Microcap",
             "description": "Microcap is a software tool used for analog and mixed-signal electronic circuit simulation. It enables engineers to design and analyze electronic circuits before fabrication.",
-            "show": true
+            "show": false
         },
         {
             "index": 11,
@@ -126,6 +126,14 @@
             "backgroundColor": "#00CED1",
             "name": "VHDL",
             "description": "VHDL (VHSIC Hardware Description Language) is a hardware description language used to model and simulate digital circuits. It is commonly used in the design and verification of electronic systems.",
+            "show": true
+        },
+        {
+            "index": 16,
+            "iconURL": "Altium.png",
+            "backgroundColor": "#FFD700",
+            "name": "Altium",
+            "description": "Altium Designer is a comprehensive PCB design software suite that integrates schematic capture, PCB layout, and advanced simulation tools to streamline electronic product development.",
             "show": true
         }
     ]

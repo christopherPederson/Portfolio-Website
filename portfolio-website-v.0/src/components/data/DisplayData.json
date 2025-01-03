@@ -1,6 +1,72 @@
 {
     "displays": [
         {
+            "name": "CSYS",
+            "title": "Lunar Rover - Micro Dosimeter (UDOS)",
+            "mainImage": "CSYS_MAIN.jpg",
+            "color": "#DC6CF8",
+            "orientation": "image--left",
+            "toolList":["LTSpice","Altium"],
+            "showDescription": true,
+            "description": "Served as the sole Project Engineer for the Micro Dosimeter (UDOS) on the Canadian Lunar Rover Mission, part of Canada's contribution to the Artemis Program. Led the design and development of this critical device, taking it from initial schematics to a fully tested prototype in just four months. The Micro Dosimeter, designed to measure radiation events on the lunar surface, is scheduled to launch alongside the rover in 2027.",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "CSYS--BARE_UDOS.webp",
+                    "title": "UDOS Boards",
+                    "description": "This photo showcases the micro dosimeter boards that constitute the device stack. Each board was meticulously assembled by me to ensure precision and functionality."
+                },
+                {
+                    "image": "CSYS--ASSY_UDOS.webp",
+                    "title": "Assembled UDOS",
+                    "description": "The image features the fully assembled prototype of the device, which was utilized in testing to validate performance and reliability under extreme environmental conditions for future iterations."
+                },
+                {
+                    "image": "CSYS--ROVER.webp",
+                    "title": "Lunar Rover",
+                    "description": "The Canadian Lunar Rover, currently under development by Canadensys, has garnered significant attention and has been featured in numerous news outlets."
+                },
+                {
+                    "image": "CSYS--ARTEMIS.webp",
+                    "title": "Artemis",
+                    "description": "The Canadian Lunar Rover Mission is a vital component of Canada's contribution to the Artemis Program, serving as a crucial step toward exploring and identifying habitable environments on the lunar surface."
+                }
+            ]
+        },
+        {
+            "name": "SAT",
+            "title": "Pico Satellite",
+            "mainImage": "SAT_MAIN.jpg",
+            "color": "#FF6E6E",
+            "orientation": "image--right",
+            "toolList":["LTSpice","Altium", "C++", "Fusion 360"],
+            "showDescription": true,
+            "description": "I designed and built a pico-satellite, a miniaturized version of the standard CubeSat with a quarter of the volume of a 1U CubeSat. Weighing just 80 grams, this solar-powered satellite features an aluminum chassis and 12 solar cells for efficient energy harvesting. It communicates via a short-burst L-band transceiver and includes two custom-designed main boards: the onboard computer (OBC) and the power conditioning board. The satellite is equipped with specialized sensors to monitor UV-A, UV-B, and UV-C bands, delivering critical data on solar activity. This compact and innovative design showcases advanced functionality in a highly efficient form factor.",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "SAT--PSU.webp",
+                    "title": "PSU Board",
+                    "description": "The image depicts the power conditioning board, which efficiently manages power from the solar cells or a 400mAh LiPo battery. It converts the input into stable 3.3V and 5V outputs for the satellite's systems."
+                },
+                {
+                    "image": "SAT--MECH.webp",
+                    "title": "Chassis",
+                    "description": "The image showcases the satellite's lightweight 6061 aluminum chassis, designed to minimize launch costs. It is electrically isolated from the system's ground to prevent spacecraft charging and ensure operational reliability."
+                },
+                {
+                    "image": "SAT--9603.webp",
+                    "title": "RockBlock 9603",
+                    "description": "The satellite incorporates a pre-built RockBLOCK 9603 short-burst L-band transceiver with an integrated patch antenna. This choice streamlined the design process and reduced overall system complexity."
+                },
+                {
+                    "image": "SAT--SENSOR.webp",
+                    "title": "OSRAM Senosr",
+                    "description": "The mission aims to monitor UV radiation using the AMS-OSRAM AS7331 sensor, which performs basic spectral analysis across the 260nm to 360nm wavelength range. The sensor communicates via I2C, transmitting data to the onboard computer (OBC) for analysis."
+                }
+            ]
+        },
+        {
             "name": "PG_PCB",
             "title": "Automotive PCB",
             "mainImage": "PG_PCB_MAIN.jpeg",
