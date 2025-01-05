@@ -18,6 +18,8 @@ export default function Body() {
             <Display key={uuidv4()} data={data.displays[4]} />
             <Display key={uuidv4()} data={data.displays[5]} />
             <Display key={uuidv4()} data={data.displays[6]} />
+            <Display key={uuidv4()} data={data.displays[7]} />
+            <Display key={uuidv4()} data={data.displays[8]} />
         </div>
     )
 }
