@@ -13,13 +13,14 @@ export default function Body() {
             <ReferencesSlider />
             <Display key={uuidv4()} data={data.displays[1]} />
             <Display key={uuidv4()} data={data.displays[2]} />
-            <GithubCalendarComp username="christopherPederson"/>
             <Display key={uuidv4()} data={data.displays[3]} />
             <Display key={uuidv4()} data={data.displays[4]} />
+            <GithubCalendarComp username="christopherPederson"/>
             <Display key={uuidv4()} data={data.displays[5]} />
             <Display key={uuidv4()} data={data.displays[6]} />
             <Display key={uuidv4()} data={data.displays[7]} />
             <Display key={uuidv4()} data={data.displays[8]} />
+            <Display key={uuidv4()} data={data.displays[9]} />
         </div>
     )
 }

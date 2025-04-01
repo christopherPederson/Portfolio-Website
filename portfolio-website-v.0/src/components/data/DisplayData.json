@@ -5,7 +5,7 @@
             "title": "Lunar Rover - Micro Dosimeter (UDOS)",
             "mainImage": "CSYS_MAIN.jpg",
             "color": "#DC6CF8",
-            "orientation": "image--left",
+            "orientation": "image--right",
             "toolList":["LTSpice","Altium"],
             "showDescription": true,
             "description": "Served as the sole Project Engineer for the Micro Dosimeter (UDOS) on the Canadian Lunar Rover Mission, part of Canada's contribution to the Artemis Program. Led the design and development of this critical device, taking it from initial schematics to a fully tested prototype in just four months. The Micro Dosimeter, designed to measure radiation events on the lunar surface, is scheduled to launch alongside the rover in 2027.",
@@ -38,7 +38,7 @@
             "title": "Pico Satellite",
             "mainImage": "SAT_MAIN.jpg",
             "color": "#FF6E6E",
-            "orientation": "image--right",
+            "orientation": "image--left",
             "toolList":["LTSpice","Altium", "C++", "Fusion 360"],
             "showDescription": true,
             "description": "I designed and built a pico-satellite, a miniaturized version of the standard CubeSat with a quarter of the volume of a 1U CubeSat. Weighing just 80 grams, this solar-powered satellite features an aluminum chassis and 12 solar cells for efficient energy harvesting. It communicates via a short-burst L-band transceiver and includes two custom-designed main boards: the onboard computer (OBC) and the power conditioning board. The satellite is equipped with specialized sensors to monitor UV-A, UV-B, and UV-C bands, delivering critical data on solar activity. This compact and innovative design showcases advanced functionality in a highly efficient form factor.",
@@ -71,7 +71,7 @@
             "title": "Automotive PCB",
             "mainImage": "PG_PCB_MAIN.jpeg",
             "color": "#FFD700",
-            "orientation": "image--left",
+            "orientation": "image--right",
             "toolList":["LTSpice","C++","Fusion 360","Solid Edge"],
             "showDescription": true,
             "description": "During my tenure as a Product Developer at Plasmagear, I spearheaded the conception, testing, and production of two innovative air purifiers for public transport. Joining the team, I encountered minimal progress on the design front, prompting me to single-handedly engineer the entire system from scratch. This involved crafting the case and developing controller boards for both devices. Overcoming the challenge of ensuring functionality in harsh Canadian automotive environments, I assumed the role of lead developer, with the guidance of Chris Batory, and successfully delivered two automotive-grade controller PCBs capable of withstanding extreme temperatures.",
@@ -104,7 +104,7 @@
             "title": "RTL Logic Circuits",
             "mainImage": "RTL_MAIN.jpg",
             "color": "#2DB3EC",
-            "orientation": "image--right",
+            "orientation": "image--left",
             "toolList":["LTSpice","MicroCap"],
             "showDescription": true,
             "description": "I am fascinated by retro electronics.  During my second co-op, I deeply explored RTL (Resistor-Transistor Logic) and its integration into modern architecture frameworks. This research led me to design custom logic circuits, starting with a specialized board for transistor characterization. I captured and graphed their behaviors to understand the relationship between base and collector currents, crucial for analyzing transistor gain dynamics. Using this knowledge, I built essential logic gates right down to individual component level, including the NOT and NAND gates, and advanced to designing RS and D-type flip-flops. These projects enhanced my skills in RTL design and broadened my grasp of computer architecture fundamentals.",
@@ -276,6 +276,18 @@
                     "description": "A team of students and I were invited to speak at the Young Founders Summit Asia about some research we were doing involving semiconductors. It was a great experience, and I enjoyed speaking on stage."
                 }
             ]
+        },
+        {
+            "name": "NRLPRB",
+            "title": "Neural EAP ADC",
+            "mainImage": "NRLPRB_MAIN.jpg",
+            "color": "#FF6E6E",
+            "orientation": "image--left",
+            "toolList":["LTSpice","Altium"],
+            "showDescription": true,
+            "description": "This 3mm by 3mm project involved designing a prototype two-channel analog-to-digital converter (ADC) for accurately capturing extracellular action potentials (EAP) at low signal levels using commercial off-the-shelf components. The design strategically balances high sampling rates, precise amplification, and controlled offset voltages to ensure that the subtle 20µV peaks are digitized reliably. By incorporating a meticulous sampling strategy—with defined precharge, conversion, and guardband intervals—the design not only meets stringent performance and power constraints but also serves as a scalable proof-of-concept for future expansion into 100-channel systems and advanced ASIC implementations.",
+            "showSubDisplay": false,
+            "subDisplays": []
         }
     ]
 }
