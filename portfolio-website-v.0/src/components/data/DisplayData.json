@@ -34,6 +34,51 @@
             ]
         },
         {
+            "name": "VOX",
+            "title": "Voxelis AI",
+            "mainImage": "VOX_DEVICE_SIDE.webp",
+            "color": "#CAE755",
+            "orientation": "image--left",
+            "toolList":["Altium","C++", "C", "Python", "LTSpice", "3D CAD"],
+            "showDescription": false,
+            "description": "",
+            "showSubDisplay": true,
+            "subDisplays": [
+                {
+                    "image": "VOX_AS350.webp",
+                    "title": "Helicopter Mounting",
+                    "description": "VoxVision is currently undergoing flight testing on both the AS350 and the UH-60 Black Hawk."
+                },
+                {
+                    "image": "VOX_LIGHTS.webp",
+                    "title": "Rigid-Flex PCBA",
+                    "description": "During my time at Voxelis, I designed half a dozen PCBs, but my favorite was the rigid-flex LED driver featured prominently at the front of the device."
+                },
+                {
+                    "image": "VOX_VIBE.webp",
+                    "title": "PCBA Design",
+                    "description": "I updated and laid out the onboard vibration board, which integrates multiple sensors to monitor a wide range of frequency bands."
+                },
+                {
+                    "image": "VOX_THERM.webp",
+                    "title": "Thermal Testing",
+                    "description": "I was responsible for designing the in-house thermal chamber, which involved sheet metal design, wireless data acquisition, and control systems integration."
+                }
+            ]
+        },
+        {
+            "name": "FPGA",
+            "title": "FPGA Flight Computer",
+            "mainImage": "FPGA_MAIN.webp",
+            "color": "#2db3ec",
+            "orientation": "image--right",
+            "toolList":["Altium","C++", "C", "Python", "LTSpice", "3D CAD"],
+            "showDescription": true,
+            "description": "Designed a custom PCB flight computer around the Xilinx Zynq-7000 SoC (484-pin BGA) to process frames from five parallel low-cost thermal cameras directly in the FPGA fabric. Implemented dual DDR3 ICs in a fly-by topology, gigabit Ethernet, and complete power-plane separation between processor and motor domains using optically isolated control signals. Designed for reliable high-speed operation by applying controlled impedance stack-up design, length-matched routing, and strict return-path management, enabling real-time thermal hotspot detection and servo actuation.",
+            "showSubDisplay": false,
+            "subDisplays": []
+        },
+        {
             "name": "SAT",
             "title": "Pico Satellite",
             "mainImage": "SAT_MAIN.jpg",
@@ -100,52 +145,6 @@
             ]
         },
         {
-            "name": "RTL",
-            "title": "RTL Logic Circuits",
-            "mainImage": "RTL_MAIN.jpg",
-            "color": "#2DB3EC",
-            "orientation": "image--left",
-            "toolList":["LTSpice","MicroCap"],
-            "showDescription": true,
-            "description": "I am fascinated by retro electronics.  During my second co-op, I deeply explored RTL (Resistor-Transistor Logic) and its integration into modern architecture frameworks. This research led me to design custom logic circuits, starting with a specialized board for transistor characterization. I captured and graphed their behaviors to understand the relationship between base and collector currents, crucial for analyzing transistor gain dynamics. Using this knowledge, I built essential logic gates right down to individual component level, including the NOT and NAND gates, and advanced to designing RS and D-type flip-flops. These projects enhanced my skills in RTL design and broadened my grasp of computer architecture fundamentals.",
-            "showSubDisplay": true,
-            "subDisplays": [
-                {
-                    "image": "RTL_TRANSISTOR.webp",
-                    "title": "Transistor Characterization",
-                    "description": "This is a custom characterization board. It allowed me to vary the base current and graph how the base-emitter voltage drop and collector-emitter current respond."
-                },
-                {
-                    "image": "RTL_NAND.webp",
-                    "title": "NAND GATE",
-                    "description": "NAND gates are the fundamental logic component in all modern-day computer architecture. The one shown here was built using RTL by me."
-                },
-                {
-                    "image": "RTL_RS_FLIPFLOP.webp",
-                    "title": "RS Flip Flop",
-                    "description": "Like the one here, an RS flip-flop circuit is used to store a single bit. It has a simple operation, only requiring a SET and RESET pin."
-                },
-                {
-                    "image": "RTL_D_FLIPFLOP.webp",
-                    "title": "D Type Flip Flop",
-                    "description": "This D-type flip-flop is a digital circuit element that stores and outputs a single bit of information customarily based on the state of its input signal at a specific clock edge."
-                }
-            ]
-        },
-        {
-            "name": "PG_WEBSITE",
-            "title": "Corporate Website Dev",
-            "mainImage": "PG_WEBSITE_MAIN.png",
-            "color": "#FF6E6E",
-            "orientation": "image--right",
-            "toolList":["HTML","CSS","JavaScript","TailwindCSS"],
-            "showDescription": true,
-            "description": "At Plasmagear, I spearheaded the development of a corporate website designed to showcase the company's research and development services. Leveraging my expertise in vanilla HTML, CSS, and JavaScript, I crafted a user-friendly and maintainable platform, specifically engineered to facilitate seamless transitions for future developers. This website not only attracted numerous clients but also set a new standard for professionalism, surpassing the capabilities of typical no-code websites. Check it out at www.Plasmagear.ca!",
-            "showSubDisplay": false,
-            "subDisplays": [
-            ]
-        },
-        {
             "name": "ADDER",
             "title": "analog adder circuit",
             "mainImage": "ADDER_MAIN.jpg",
@@ -180,7 +179,7 @@
         },
         {
             "name": "PG_MECH",
-            "title": "Mechanical Design and CAD",
+            "title": "Mechanical Design",
             "mainImage": "PG_MECH_MAIN.webp",
             "color": "#305DD0",
             "orientation": "image--right",
@@ -210,84 +209,6 @@
                     "description": "This is the final AirShade prototype mounted inside a demo bus for testing and configuration purposes. It offered the team insights into future design changes and improvements."
                 }
             ]
-        },
-        {
-            "name": "SPOTR",
-            "title": "Spot-R Monitoring System",
-            "mainImage": "SPOTR_MAIN.gif",
-            "color": "#00CED1",
-            "orientation": "image--left",
-            "toolList":["Fusion 360","C","C++","Python","LTSpice"],
-            "showDescription": true,
-            "description": "In 2022, I co-founded Spot-R to address the challenge students face in finding study areas. We developed a non-invasive, centralized system that provides real-time occupancy data using passive infrared (PIR) sensors. We performed rigorous testing with various sensors and even programming Zilog PIR microcontrollers using their IDE software. Our infrastructure was then able to upload this information to an AWS server via the ESP8266 platform. This solution aimed to empower students to optimize their study space usage. However, we found problems with the PIR approach which made the project not viable.",
-            "showSubDisplay": true,
-            "subDisplays": [
-                {
-                    "image": "SPOTR_PY.webp",
-                    "title": "Data Collection Script",
-                    "description": "This is a Python script I wrote to analyze serial data from the Zilog development board on device activation. It allowed me to set limits on activation tolerances and graph our results. "
-                },
-                {
-                    "image": "SPOTR_PROTOTYPE.webp",
-                    "title": "Prototype Device",
-                    "description": "This is a 3D-printed prototype I designed for the wall-mounted variant. It serves as a proof of concept and allows us to gauge sensor activation in a mounted state. "
-                },
-                {
-                    "image": "SPOTR_ESP.webp",
-                    "title": "ESP 8266 Chip",
-                    "description": "I wrote a script allowing us to transmit activation data from the PIR sensor over Wi-Fi to an AWS server, where users could query it. This involved some reasonably advanced C++ architecture. "
-                },
-                {
-                    "image": "SPOTR_RESULTS.webp",
-                    "title": "PIR Results",
-                    "description": "We performed hundreds of tests using various PIR sensors to find one capable of surveying a large study area. This ultimately led us to decide that any low-cost option would not be viable. "
-                }
-            ]
-        },
-        {
-            "name": "PROJ",
-            "title": "Other Personal Projects",
-            "mainImage": "PROJ_MAIN.webp",
-            "color": "#CAE755",
-            "orientation": "image--right",
-            "toolList":["Fusion 360","Java"],
-            "showDescription": false,
-            "description": "",
-            "showSubDisplay": true,
-            "subDisplays": [
-                {
-                    "image": "PROJ_GUILLOTINE.webp",
-                    "title": "Full Scale Guillotine",
-                    "description": "This is a 14-ft full-scale guillotine I built as part of a high school project. The blade was made of half inch steel and weighed over 30 lbs. I have a wealth of knowledge in wood and metal working."
-                },
-                {
-                    "image": "PROJ_3D_PRINT.webp",
-                    "title": "FDM Experience",
-                    "description": "This is a 3D-printed adapter for an FLIR imager. I have owned and operated 3D printers for over six years and have experience with low-end and high-end FDM machines."
-                },
-                {
-                    "image": "PROJ_JAVA.webp",
-                    "title": "Java Sorting Algorithm",
-                    "description": "I wrote these Insertion, Bubble, and Bogo sort algorithm using JavaScript as a demo for students I was tutoring at the time. Although I have some experience with Java, it is not my preferred language."
-                },
-                {
-                    "image": "PROJ_EROR.webp",
-                    "title": "Public Speaking",
-                    "description": "A team of students and I were invited to speak at the Young Founders Summit Asia about some research we were doing involving semiconductors. It was a great experience, and I enjoyed speaking on stage."
-                }
-            ]
-        },
-        {
-            "name": "NRLPRB",
-            "title": "Neural EAP ADC",
-            "mainImage": "NRLPRB_MAIN.jpg",
-            "color": "#FF6E6E",
-            "orientation": "image--left",
-            "toolList":["LTSpice","Altium"],
-            "showDescription": true,
-            "description": "This 3mm by 3mm project involved designing a prototype two-channel analog-to-digital converter (ADC) for accurately capturing extracellular action potentials (EAP) at low signal levels using commercial off-the-shelf components. The design strategically balances high sampling rates, precise amplification, and controlled offset voltages to ensure that the subtle 20µV peaks are digitized reliably. By incorporating a meticulous sampling strategy—with defined precharge, conversion, and guardband intervals—the design not only meets stringent performance and power constraints but also serves as a scalable proof-of-concept for future expansion into 100-channel systems and advanced ASIC implementations.",
-            "showSubDisplay": false,
-            "subDisplays": []
         }
     ]
 }

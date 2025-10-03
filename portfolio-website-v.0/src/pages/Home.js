@@ -11,7 +11,7 @@ export default function Home() {
         // Simulate fetching data with a timeout
         setTimeout(() => {
             setIsLoading(false);
-        }, 5000); // Example: Stop loading after 5 seconds
+        }, 3000); // Example: Stop loading after 5 seconds
     }, []);
     return (
         <>
